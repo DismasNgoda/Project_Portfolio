@@ -8,8 +8,8 @@ body{
 
     /* background-color: #fafafa; */
     font-family: 'Space  Grotesk'  'Oleo Script' sans-serif;
-    background-image: url('../photos/jason-goodman-Oalh2MojUuk-unsplash.jpg');
-    background-size: cover;
+    /* background-image: url('../photos/jason-goodman-Oalh2MojUuk-unsplash.jpg'); */
+    /* background-size: cover; */
     
 }
 
@@ -78,3 +78,28 @@ padding: 20px 20px 20px 20px;
     color: #fafafa;
     border: none;
 }
+
+.option{
+    margin-top: 70px;
+    text-align: center;
+    background-image: url("../photos/jason-goodman-Oalh2MojUuk-unsplash.jpg");
+    background-size: cover;
+    margin-top: 0;
+    height: 500px;
+}
+
+img{
+    height: 200px;
+  
+}
+
+#get{
+    margin-top: 100px;
+    background-color: #00BFFF;
+    color: #fafafa;
+    border: none;
+    padding: 20px 10px 20px 10px;
+    margin-bottom: -10px;
+  
+}
+
