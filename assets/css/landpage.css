@@ -100,6 +100,25 @@ img{
     border: none;
     padding: 20px 10px 20px 10px;
     margin-bottom: -10px;
+    font-weight: bold;
   
+}
+.clients{
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.has{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    background-color: #00BFFF;
+    color: #fafafa;
+    padding: 20px;
+margin-top: 10px;
+}
+
+.has p{
+    font-weight: bold;
 }
 
