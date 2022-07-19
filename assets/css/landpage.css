@@ -83,10 +83,11 @@ padding: 20px 20px 20px 20px;
     margin-top: 70px;
     text-align: center;
     background-image: url("../photos/jason-goodman-Oalh2MojUuk-unsplash.jpg");
-    background-size: cover;
+    background-size: contain;
     margin-top: 0;
     height: 500px;
-}
+    
+  }
 
 img{
     height: 200px;
@@ -103,6 +104,12 @@ img{
     font-weight: bold;
   
 }
+
+
+
+#get:hover{
+    transform: scale(1.05);
+} 
 .clients{
     margin-left: 200px;
     margin-top: 20px;
@@ -166,5 +173,28 @@ margin-top: 10px;
     margin: 20px;
 }
 
+.feedback{
+    margin-top: 20px;
+  
+}
+.feedback p{
+    margin-top: 10px;
+  
+}
+ .message p{
+  font-weight: 600;
+}
+#senior{
+    color: #00BFFF;
+    /* background-color: red; */
+}
+#words{
+     color: black;
+    /* background-color: yellow; */
+}
+
+.message{
+    display: flex;
+}
 
 
