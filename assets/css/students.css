@@ -94,6 +94,8 @@ body {
 /* main-content */
 .main-content {
     margin: 2% 4%;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -107,6 +109,42 @@ body {
     border-radius: 16px;
     border: 3px solid #00BFFF;
 }
+
+
+/* submission-dashboard */
+/* inputs */
+.inputs-container {
+    color: black;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+form div label {
+    margin: 4% 0;
+    font-weight: 500;
+    
+}
+
+form div input {
+    padding: 2% 4%;
+    border: 2px solid #00BFFF;
+    border-radius: 10px;
+}
+
+form div #submit {
+    border: none;
+    color: white;
+    background-color: #00BFFF;
+    cursor: pointer;
+}
+
+
+
+
 
 
 

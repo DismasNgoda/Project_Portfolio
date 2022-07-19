@@ -19,7 +19,7 @@
                 <aside class="sidebar">
                     <div class="logo">
                         <h2>PROJECT MANAGER</h2>
-                        <img src="./assets/images/profile-user.png" alt="profile-user">
+                        <img src="../assets/images/profile-user.png" alt="profile-user">
                         <h3>John Doe</h3>
                         <p>SOMOOC1811</p>
                     </div>
@@ -62,8 +62,28 @@
 
             <!--main-content-->
             <div class="main-content">
-                <div class="search-container">
-                    <input type="search" placeholder="Search for projects..." id="search">
+                <div class="inputs-container">
+                    <form action="#" method="post">
+                        <div>
+                            <label for="name">Project Name</label>
+                            <input type="text" name="name" id="">
+                        </div>
+                        <div>
+                            <label for="name">Subject/ Topic</label>
+                            <input type="text" name="name" id="">
+                        </div>
+                        <div>
+                            <label for="name">Project Description</label>
+                            <input type="text" name="name" id="">
+                        </div>
+                        <div>
+                            <label for="name">Upload Your Project Here (Max 2MB)</label>
+                            <input type="file" name="upload" id="upload">
+                        </div>
+                        <div>
+                            <input type="submit" id="submit" value="Submit">
+                        </div>
+                    </form>
                 </div>
 
             </div>
@@ -72,6 +92,6 @@
 
 
 
-    <script src="./assets/js/script.js"></script>
+    <script src="../assets/js/student.js"></script>
 </body>
 </html>
