@@ -18,7 +18,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    color: white;
 }
 
 .sidebar {
@@ -100,10 +99,6 @@ body {
 
 
 /* search */
-/* .search-container {
-    margin: ;
-} */
-
 #search {
     padding: 8%;
     border-radius: 16px;
@@ -112,15 +107,21 @@ body {
 
 
 /* submission-dashboard */
+.inputs-container h3 {
+    padding: 4% 0;
+}
+
 /* inputs */
-.inputs-container {
-    color: black;
+#submission {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 form div {
+    color: black;
     display: flex;
     flex-direction: column;
-
 }
 
 form div label {
@@ -135,7 +136,13 @@ form div input {
     border-radius: 10px;
 }
 
+form div #upload {
+    padding: 40px;
+    border: 2px dotted #00BFFF;
+}
+
 form div #submit {
+    padding: 8% 0;
     border: none;
     color: white;
     background-color: #00BFFF;
