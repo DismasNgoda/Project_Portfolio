@@ -122,3 +122,49 @@ margin-top: 10px;
     font-weight: bold;
 }
 
+.service{
+   
+    display: flex;
+    /* justify-content:space-between; */
+     margin-top: 40px;
+     flex: 1;
+   
+}
+
+
+.service .content{
+    flex: 1;
+    /* display: grid; */
+    align-content: center;
+    max-width: 50%;
+    margin: 20px;
+    /* padding: 10px; */
+    
+}
+
+.service .content p{
+    margin-left: 0;
+}
+
+.read{
+    margin-left: 500px;
+    margin-top: -10px;
+  
+}
+
+.read button{
+    color: #fafafa;
+    background-color: #00BFFF;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.activity{
+    display: flex;
+    max-width: 50%;
+    margin: 20px;
+}
+
+
+
