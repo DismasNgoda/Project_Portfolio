@@ -24,7 +24,14 @@ section{
     color: #00BFFF;
     size: 5%;
 }
-#names{
+span{
     display: flex;
     margin: 5%;
+}
+input{
+    border-radius: 10%;
+    border-color: #00BFFF;
+    width: auto;
+    height: 10%;
+    box-sizing: border-box;
 }
