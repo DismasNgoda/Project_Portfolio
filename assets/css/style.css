@@ -37,9 +37,15 @@ body {
 .sidebar-list {
     display: flex;
     flex-direction: column;
-    text-align: center;
     list-style: none;
     gap: 32px;
+    margin-top: 20%;
+}
+
+.sidebar-list i {
+    font-size: 32px;
+    margin: 0 8% 0 0 ;
+    color: black;
 }
 
 .sidebar-list li {
@@ -47,8 +53,9 @@ body {
 }
 
 .sidebar-list li a {
-    color: black;
-    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
     text-decoration: none;
 }
 
@@ -97,7 +104,7 @@ body {
 #search {
     padding: 8%;
     border-radius: 16px;
-    border-color: #00BFFF;
+    border: 3px solid #00BFFF;
 }
 
 
