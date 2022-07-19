@@ -1,0 +1,129 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* general */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* sidebar */
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: white;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    /* gap: 200px; */
+}
+
+.sidebar-container {
+    padding: 2%;
+    max-width: 40%;
+    height: 680px;
+    background-color: #00BFFF;
+}
+
+.sidebar-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    gap: 32px;
+}
+
+.sidebar-list li {
+    cursor: pointer;
+}
+
+.sidebar-list li a {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.profile {
+    width: 50%;
+    height: 50%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    gap: 1rem;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.logo h2 {
+    font-weight: 800;
+    font-size: 100%;
+    color: white;
+}
+
+.logo p {
+    opacity: 70%;
+}
+
+
+
+
+/* main-content */
+.main-content {
+    margin: 2% 4%;
+}
+/* search */
+.search-container {
+    /* margin: ; */
+}
+
+#search {
+    padding: 8%;
+    border-radius: 16px;
+    border-color: #00BFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
