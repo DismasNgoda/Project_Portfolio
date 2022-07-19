@@ -8,6 +8,9 @@ body{
 
     /* background-color: #fafafa; */
     font-family: 'Space  Grotesk'  'Oleo Script' sans-serif;
+    background-image: url('../photos/jason-goodman-Oalh2MojUuk-unsplash.jpg');
+    background-size: cover;
+    
 }
 
 /*Styling Navigtion bar section */
