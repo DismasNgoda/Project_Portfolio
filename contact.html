@@ -22,21 +22,21 @@
                     <div class="form-div">
                         <div class="left-div">
                             <p>First Name</p>
-                            <input type="text" id="fname" required>
+                            <input type="text" id="fname" minlength="2" maxlength="25" required>
                         </div>
                         <div class="right-div">
                             <p>Last Name</p>
-                            <input type="text" id="lname" required>
+                            <input type="text" id="lname" minlength="2" maxlength="25" required>
                         </div>
                     </div>
                     <div class="form-div2">
                         <p>School ID</p>
-                        <input type="text" id="school-id" required>
+                        <input type="text" id="school-id" minlength="4" maxlength="10" required>
                         <p>Message</p>
-                        <textarea type="text" id="message" required></textarea>
+                        <textarea type="text" id="message" minlength="50" maxlength="200" required></textarea>
                     </div>
                     <div>
-                        <input class="btn-submit" type="button" id="submit" value="Send Message">
+                        <input class="btn-submit" type="submit" id="submit" value="Send Message">
                     </div>
                 </form>
             </div>
