@@ -114,6 +114,7 @@ img{
 
 #get:hover{
     transform: scale(1.05);
+    color: purple;
 } 
 .clients{
     margin-left: 200px;
@@ -176,6 +177,10 @@ img{
     font-weight: 600;
     margin-top: -20px;
 }
+.read button:hover{
+    transform: scale(1.05);
+    color: purple;
+}
 
 .activity{
     display: flex;
@@ -185,16 +190,17 @@ img{
 }
 
 .feedback{
-    margin-top: 20px;
+ padding-left: 20px;
+    
   
 }
 .feedback p{
     margin-top: 10px;
+    font-weight: 550;
+    margin-bottom: 20px;
   
 }
- .message p{
-  font-weight: 600;
-}
+
 #senior{
     color: #00BFFF;
     /* background-color: red; */
@@ -204,13 +210,53 @@ img{
     /* background-color: yellow; */
 }
 
+
+/* testimonials */
 .message{
+    gap: 2rem   ;
+    margin: 2% 8%;
     display: flex;
+    justify-content: space-between;
+    /* width: 90%; */
 }
+
+.message p{
+    font-weight: 600;
+  }
+
+  .jd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center          ;
+    padding: 3%;
+    border: none;
+    border-radius: 12px;
+    /* background-color: gray; */
+  }
+
+  .jd img {
+    border-radius: 100px;
+  }
+
+  .icons {  
+    /* display: flex; */
+    /* justify-content: space-around; */
+    color: #00BFFF;
+    /* color: #fafafa; */
+}
+
+.icons i {
+    width: 40px;
+    height: 40px;
+}
+
+
 .benefits{
     margin-top: 30px;
    text-align: center;
     /* background-color: red; */
+ 
 }
 
 .inquiries{
@@ -240,11 +286,12 @@ img{
 
 .reach button:hover{
     transform: scale(1.05);
+    color: purple;
    
 }
 
 .footer{
-    background-color: gray;
+    background-color: #D9D9D9;
     display: flex;
   justify-content: space-between;
   height: 200px;
@@ -255,6 +302,7 @@ img{
     margin-right: 100px;
     width: 20%;
     margin-top: 30px;
+    padding-left: 10px;
 }
 .link{
     margin-right: 30px;
