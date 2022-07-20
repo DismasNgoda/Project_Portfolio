@@ -129,6 +129,8 @@ img{
     padding: 20px;
     margin-top: 10px;
     width: 70%;
+
+    
 }
 
 .has p{
@@ -141,6 +143,7 @@ img{
     /* justify-content:space-between; */
      margin-top: 40px;
      flex: 1;
+     padding-left: 100px;
    
 }
 
@@ -178,6 +181,7 @@ img{
     display: flex;
     max-width: 50%;
     margin: 20px;
+    padding-left: 100px;
 }
 
 .feedback{
