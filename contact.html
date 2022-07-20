@@ -9,51 +9,64 @@
     <title>Contact Us</title>
 </head>
 <body>
-    <section class="contact-container">
-          <div class="form">
-            <form>
-                <h1>Contact Us</h1>
-                <p>Get in touch with out friendly team of instructors</p>
-                <span>
-                    <Label for="fname">First Name</Label>
-                    <input type="text" id="fname" value="First Name">
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" value="Last Name">
-                </span>
-               <label for="school-id">School ID</label>
+    <div class="contact-container">
+        <div class="form">
+            <h1>Contact Us</h1>
+            <p>Get in touch with out friendly team of instructors</p>
+
+            <form id="contact-form">
+                <div class="form-div">
+                    <div class="names">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="fname">
+                    </div>
+                    <div class="names">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="lname">
+                    </div>
+                </div>
+                <div>
+                    <label for="school-id">School ID</label>
                 <input type="text" id="school-id">
-                <label for="message">Message</label>
-                <input type="text" id="message">
-                <input type="button" id="submit" value="Send Message">
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea type="text" id="message"></textarea>
+                </div>
+                <div>
+                    <input  class="btn-submit" type="button" id="submit" value="Send Message">
+                </div>
             </form>
         </div>
+
         <div class="icons">
-            <section>
-            <div class="side" id="phone">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <p>Our 24/7 Toll Free Number</p>
-                <p>0101010101010</p>
+            <div class="section">
+                <div class="side" id="phone">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <p>Our 24/7 Toll Free Number</p>
+                    <p>0101010101010</p>
+                </div>
+                <div class="side" id="email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <p>General Enquiries</p>
+                    <p>projectmanagement@project.com</p>
+                </div>
             </div>
-            <div class="side" id="email">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <p>General Enquiries</p>
-                <p>projectmanagement@project.com</p>
+
+            <div class="section">
+                <div class="side" id="location">
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                    <p>Location</p>
+                    <p>UoN Plaza, Nairobi</p>
+                </div>
+                <div class="side" id="support-email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <p>Technical Enquiries</p>
+                    <p>support.projectmanagement@project.com</p>
+                </div>
             </div>
-            </section>
-            <section>
-            <div class="side" id="location">
-                <i class="fa fa-location-arrow" aria-hidden="true"></i>
-                <p>Location</p>
-                <p>UoN Plaza, Nairobi</p>
-            </div>
-            <div class="side" id="support-email">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <p>Technical Enquiries</p>
-                <p>support.projectmanagement@project.com</p>
-            </div>
-            </section>
         </div>
-    </section>
+    </div>
     
 </body>
 </html>
