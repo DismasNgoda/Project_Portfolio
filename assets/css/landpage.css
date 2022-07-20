@@ -89,6 +89,10 @@ padding: 20px ;
     background-position: 100%;
     
   }
+.title h1{
+  padding-top: 100px;
+  padding-left: 80px;
+}
 
 img{
     height: 200px;
