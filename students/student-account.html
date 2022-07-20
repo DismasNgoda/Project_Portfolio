@@ -16,80 +16,76 @@
     <section>
         <!--sidebar-->
         <div class="container flex justify-between justify-items-center">
-            <div class="sidebar w-3/12 h- bg-blue-300 md:px-12 px-8 py-4">
-                <div class="text-center">
-                    <h2 class="font-bold md:text-2xl text-xl">PROJECT MANAGER</h2>
-                    <div>
-                        <img class="lg:w-1/4 md:w-1/2 w-3/4  mt-16 mb-4" src="../assets/images/profile-user.png" alt="profile-user">
-                    </div>
+            <div class="sidebar w-3/12 h- bg-blue-300 md:px-8 px-4 lg:py-8 md:py-6 py-4">
+                <div>
+                    <h2 class="font-bold md:text-2xl text-center text-xl">PROJECT MANAGER</h2>
+                </div>
+                <div class="flex flex-col items-center md:mt-12">
+                    <img class="lg:w-1/4 md:w-1/2 w-3/4 mb-4" src="../assets/images/profile-user.png" alt="profile-user">
                     <h3 class="md:text-2xl text-xl font-semibold text-gray-800">John Doe</h3>
                     <p class="md:text-lg text-md font-medium">SOMOOC1811</p>
+
+                    <div class="md:mt-4 mt-2">
+                        <ul class="sidebar-list">
+                            <li class="my-4">
+                                <i class="fa fa-home md:text-4xl text-2xl md:mr-4 mr-2" aria-hidden="true"></i>
+                                <a class="text-white font-semibold md:text-xl text-lg" id="links" href="#">Dashboard</a>
+                            </li>
+                            <li class="my-4">
+                                <i class="fa fa-user md:text-4xl text-2xl md:mr-4 mr-2" aria-hidden="true"></i>
+                                <a class="text-white font-semibold md:text-xl text-lg" id="links" href="#">Account</a>
+                            </li>
+                            <li class="my-4">
+                                <i class="fa fa-thumbs-up md:text-4xl text-2xl md:mr-4 mr-2" aria-hidden="true"></i>
+                                <a class="text-white font-semibold md:text-xl text-lg" id="links" href="approved.html">Approved</a>
+                            </li>
+                            <li class="my-4">
+                                <i class="fa fa-tasks md:text-4xl text-2xl md:mr-4 mr-2" aria-hidden="true"></i>
+                                <a class="text-white font-semibold md:text-xl text-lg" id="links" href="pending.html">Pending</a>
+                            </li>
+                            <li class="my-4">
+                                <i class="fa fa-thumbs-down md:text-4xl text-2xl md:mr-4 mr-2" aria-hidden="true"></i>
+                                <a class="text-white font-semibold md:text-xl text-lg" id="links" href="rejected.html">Rejected</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-sign-out md:text-4xl text-2xl" aria-hidden="true"></i>
+                        <a class="text-white font-medium md:text-2xl text-xl" id="logout" href="#!">Log Out</a>
+                            </li>
+                        </ul>
+                    </div>  
                 </div>
 
-                <div class="">
-                    <ul class="sidebar-list">
-                        <li class="">
-                            <i class="fa fa-home md:text-3xl text-2xl" aria-hidden="true"></i>
-                            <a class="text-white font-medium md:text-2xl text-xl" id="links" href="#">Dashboard</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-user md:text-3xl text-2xl" aria-hidden="true"></i>
-                            <a class="text-white font-medium md:text-2xl text-xl" id="links" href="#">My Account</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-thumbs-up md:text-3xl text-2xl" aria-hidden="true"></i>
-                            <a class="text-white font-medium md:text-2xl text-xl" id="links" href="approved.html">Approved</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-tasks md:text-3xl text-2xl" aria-hidden="true"></i>
-                            <a class="text-white font-medium md:text-2xl text-xl" id="links" href="pending.html">Pending</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-thumbs-down md:text-3xl text-2xl" aria-hidden="true"></i>
-                            <a class="text-white font-medium md:text-2xl text-xl" id="links" href="rejected.html">Rejected</a>
-                        </li>
-                    </ul>
-                </div>
-        
-                <div>
-                    <ul class="sidebar-list">
-                        <li>
-                            <i class="fa fa-sign-out md:text-4xl text-2xl" aria-hidden="true"></i>
-                            <a class="text-white font-medium md:text-2xl text-xl" id="logout" href="#!">Log Out</a>
-                        </li>
-                    </ul>
-                </div>
-
+                
             </div>
 
             <!--main-content-->
             <div class="w-9/12">
                 <div class="inputs-container m-12">
                     <div>
-                        <input class="border-2 border-blue-300 rounded-lg p-2" type="text" placeholder="Search for projects..." id="subject">
+                        <input class="border-2 border-blue-300 rounded-lg p-2 w-full" type="text" placeholder="Search for projects..." id="subject">
                     </div>
 
-                    <div class="flex justify-between text-gray-800 mt-8 mb-4">
-                        <div class="cursor-pointer bg-gray-300 font-semibold py-2 px-4 rounded-md">
+                    <div class="flex justify-between flex-shrink text-gray-800 mt-8 mb-4">
+                        <div class="cursor-pointer bg-gray-300 font-semibold py-2 px-4 rounded-md shadow-md hover:shadow-lg hover:scale-110 hover:translate-y-2 duration-500">
                             <p class="">ALL</p>
                             <i></i>
                         </div>
-                        <div class="cursor-pointer bg-gray-300 font-semibold py-2 px-4 rounded-md">
+                        <div class="cursor-pointer bg-gray-300 font-semibold py-2 px-4 rounded-md shadow-md hover:shadow-lg hover:scale-110 hover:translate-y-2 duration-500">
                             <p class="">TECHNOLOGY</p>
                         </div>
-                        <div class="cursor-pointer bg-gray-300 font-semibold py-2 px-4 rounded-md">
+                        <div class="cursor-pointer bg-gray-300 font-semibold py-2 px-4 rounded-md shadow-md hover:shadow-lg hover:scale-110 hover:translate-y-2 duration-500">
                             <p class="">AGRICULTURE</p>
                         </div>
-                        <div class="cursor-pointer bg-gray-300 font-semibold py-2 px-4 rounded-md">
+                        <div class="cursor-pointer bg-gray-300 font-semibold py-2 px-4 rounded-md shadow-md hover:shadow-lg hover:scale-110 hover:translate-y-2 duration-500">
                             <p class="">HEALTH</p>
                         </div>
-                        <div class="cursor-pointer bg-gray-300 font-semibold py-2 px-4 rounded-md">
+                        <div class="cursor-pointer bg-gray-300 font-semibold py-2 px-4 rounded-md shadow-md hover:shadow-lg hover:scale-110 hover:translate-y-2 duration-500">
                             <p class="">ENGINEERING</p>
                         </div>
-                        <div class="cursor-pointer bg-gray-300 font-semibold py-2 px-4 rounded-md">
+                        <div class="cursor-pointer bg-gray-300 font-semibold py-2 px-4 rounded-md shadow-md hover:shadow-lg hover:scale-110 hover:translate-y-2 duration-500">
                             <p class="">BUSINESS</p>
                         </div>
-                        <div class="cursor-pointer bg-gray-300 font-semibold py-2 px-4 rounded-md">
+                        <div class="cursor-pointer bg-gray-300 font-semibold py-2 px-4 rounded-md shadow-md hover:shadow-lg hover:scale-110 hover:translate-y-2 duration-500">
                             <p class="">RELIGION</p>
                         </div>
                     </div>
@@ -126,7 +122,7 @@
                             </div>
 
                             <div class="md:mt-16 mt-8">
-                                <h3 class="md:text-2xl text-xl text-gray-800 font-semibold mt-8 mb-4">APPROVED</h3>
+                                <h3 class="md:text-2xl text-xl text-gray-800 font-semibold mt-8 mb-4">PENDING</h3>
                                 <div class="flex md:flex-row flex-col justify-between lg:gap-16 md:gap-8 ">
                                     <div class="md:w-1/2 w-full p-6 bg-gray-200 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 hover:translate-y-4 duration-500">
                                         <img class="rounded-xl" src="../assets/images/card.jpg" alt="">
