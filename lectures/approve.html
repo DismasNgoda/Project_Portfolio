@@ -5,74 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Manager</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../assets/css/lecturers.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body>
+<body style="font-family: 'Inter', sans-serif;">
+
     <!-- dashboard -->
     <section>
-        <div class="dashboard">
+        <!--sidebar-->
+        <div class="container flex justify-between justify-items-center">
+            <div class="sidebar w-3/12 h- bg-blue-300 md:px-8 px-4 lg:py-8 md:py-6 py-4">
+                <div>
+                    <h2 class="font-bold md:text-2xl text-center text-xl">PROJECT MANAGER</h2>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img class="lg:w-1/4 md:w-1/2 w-3/4 mt-16 mb-4" src="../assets/images/profile-user.png" alt="profile-user">
+                    <h3 class="md:text-2xl text-xl font-semibold text-gray-800">John Doe</h3>
+                    <p class="md:text-lg text-md font-medium">SOMOOC1811</p>
 
-            <!--sidebar-->
-            <div class="sidebar-container">
-                <aside class="sidebar">
-                    <div class="logo">
-                        <h2>PROJECT MANAGER</h2>
-                        <img src="./assets/images/profile-user.png" alt="profile-user">
-                        <h3>John Doe</h3>
-                        <p>SOMOOC1811</p>
-                    </div>
-
-                    <div class="">
+                    <div class="mt-16">
                         <ul class="sidebar-list">
-                            <li>
-                                <i class="fa fa-home" aria-hidden="true"></i>
-                                <a id="links" href="#">Dashboard</a>
+                            <li class="my-4">
+                                <i class="fa fa-home md:text-4xl text-2xl md:mr-4 mr-2 text-gray-800" aria-hidden="true"></i>
+                                <a class="text-white font-semibold md:text-xl text-lg" id="links" href="#">Dashboard</a>
+                            </li>
+                            <li class="my-4">
+                                <i class="fa fa-user md:text-4xl text-2xl md:mr-4 mr-2 text-gray-800" aria-hidden="true"></i>
+                                <a class="text-white font-semibold md:text-xl text-lg" id="links" href="#">Account</a>
+                            </li>
+                            <li class="my-4">
+                                <i class="fa fa-thumbs-up md:text-4xl text-2xl md:mr-4 mr-2 text-gray-800" aria-hidden="true"></i>
+                                <a class="text-white font-semibold md:text-xl text-lg" id="links" href="approved.html">Approved</a>
+                            </li>
+                            <li class="my-4">
+                                <i class="fa fa-spinner md:text-4xl text-2xl md:mr-4 mr-2 text-gray-800" aria-hidden="true"></i>
+                                <a class="text-white font-semibold md:text-xl text-lg" id="links" href="pending.html">Pending</a>
+                            </li>
+                            <li class="my-4">
+                                <i class="fa fa-thumbs-down md:text-4xl text-2xl md:mr-4 mr-2 text-gray-800" aria-hidden="true"></i>
+                                <a class="text-white font-semibold md:text-xl text-lg" id="links" href="rejected.html">Rejected</a>
                             </li>
                             <li>
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                                <a id="links" href="#">My Account</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                                <a id="links" href="approved.html">Approved</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-tasks" aria-hidden="true"></i>
-                                <a id="links" href="pending.html">Pending</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-thumbs-down" aria-hidden="true"></i>
-                                <a id="links" href="rejected.html">Rejected</a>
+                                <i class="fa fa-sign-out md:text-4xl text-2xl mr-2 text-gray-800" aria-hidden="true"></i>
+                                <a class="text-white font-medium md:text-2xl text-xl" id="logout" href="#!">Log Out</a>
                             </li>
                         </ul>
-                    </div>
-            
-                    <div>
-                        <ul class="sidebar-list">
-                            <li>
-                                <i class="fa fa-sign-out" aria-hidden="true"></i>
-                                <a id="logout" href="#!">Log Out</a>
-                            </li>
-                        </ul>
-                    </div>
-                </aside>
+                    </div>  
+                </div>
+                
             </div>
 
             <!--main-content-->
-            <div class="main-content">
-                <div class="search-container">
-                    <input type="search" placeholder="Search for projects..." id="search">
-                </div>
+            <div class="w-9/12">
+                <div class="inputs-container m-12">
+                    <div>
+                        <input class="border-2 border-blue-300 rounded-lg p-2 w-full" type="text" placeholder="Search for projects..." id="subject">
+                    </div>
 
+                    
+                    <!--cards-container-->
+                    <div>
+                        <div>
+                            <h3 class="md:text-2xl text-xl text-gray-800 font-semibold mb-4 mt-8">APPROVE PROJECTS</h3>
+                            <div class="flex md:flex-row flex-col justify-between lg:gap-16 md:gap-8 ">
+                                <div class="md:w-1/2 w-full p-6 bg-gray-200 rounded-xl shadow-lg hover:shadow-xl duration-500">
+                                    <img class="rounded-xl" src="../assets/images/card.jpg" alt="">
+                                    <h3 class="font-semibold my-4 ">Senior Project Management</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptatem.</p>
+                                    <div class="flex justify-between">
+                                        <button class="bg-blue-400 py-2 px-3 rounded-md mt-4 text-white font-medium hover:scale-105 hover:translate-y-2 duration-500">
+                                            Approve
+                                        </button>
+                                        <button class="bg-red-400 py-2 px-3 rounded-md mt-4 text-white font-medium hover:scale-105 hover:translate-y-2 duration-500">
+                                            Reject
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="md:w-1/2 w-full p-6 bg-gray-200 rounded-xl shadow-lg hover:shadow-xl duration-500">
+                                    <img class="rounded-xl" src="../assets/images/card.jpg" alt="">
+                                    <h3 class="font-semibold my-4 ">Senior Project Management</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptatem.</p>
+                                    <div class="flex justify-between">
+                                        <button class="bg-blue-400 py-2 px-3 rounded-md mt-4 text-white font-medium hover:scale-105 hover:translate-y-2 duration-500">
+                                            Approve
+                                        </button>
+                                        <button class="bg-red-400 py-2 px-3 rounded-md mt-4 text-white font-medium hover:scale-105 hover:translate-y-2 duration-500">
+                                            Reject
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between md:text-xl text-lg md:mt-8 mt-4">
+                            <button class="bg-blue-400 py-2 px-3 rounded-md mt-4 text-white font-medium hover:scale-110 hover:translate-y-2 duration-500">
+                                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                Previous
+                            </button>
+                            <button class="bg-blue-400 py-2 px-3 rounded-md mt-4 text-white font-medium hover:scale-110 hover:translate-y-2 duration-500">
+                                Next
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+                        </div> 
+                    </div>
+
+                </div>
             </div>
+
         </div>
+
     </section>
 
 
 
-    <script src="./assets/js/script.js"></script>
+    <script src="../assets/js/student.js"></script>
 </body>
 </html>
