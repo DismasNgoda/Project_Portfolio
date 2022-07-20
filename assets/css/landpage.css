@@ -83,9 +83,10 @@ padding: 20px ;
     margin-top: 70px;
     text-align: center;
     background-image: url("../photos/jason-goodman-Oalh2MojUuk-unsplash.jpg");
-    background-size: contain;
+    background-size: cover;
     margin-top: 0;
     height: 500px;
+    background-position: 100%;
     
   }
 
@@ -204,3 +205,75 @@ img{
     /* background-color: red; */
 }
 
+.inquiries{
+    background-image: url("../photos/tobias-keller-73F4pKoUkM0-unsplash.jpg");
+    height: 300px;
+    background-size: cover;
+    margin-top: 30px;
+    background-position: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.ask{
+    padding-left: 400px;
+}
+
+.reach{
+    padding-left: 300px;
+}
+.reach button{
+    background-color: #00BFFF;
+    border: none;
+    padding: 30px 20px 30px 20px;
+    color: #fafafa;
+}
+
+.reach button:hover{
+    transform: scale(1.05);
+   
+}
+
+.footer{
+    background-color: gray;
+    display: flex;
+  justify-content: space-between;
+  height: 200px;
+  
+}
+
+.manage{
+    margin-right: 100px;
+    width: 20%;
+    margin-top: 30px;
+}
+.link{
+    margin-right: 30px;
+    margin-top: 30px;
+    font-weight: 550;
+ 
+}
+
+.link p{
+    margin-bottom: 10px;
+}
+
+.support{
+    margin-right: 30px;
+    margin-top: 30px;
+    font-weight: 550;
+}
+
+.contact{
+    margin-right: 30px;
+    margin-top: 30px;
+    font-weight: 550;
+}
+
+.support p{
+    margin-bottom: 10px;
+}
+.contact p{
+    margin-bottom: 10px;
+}
