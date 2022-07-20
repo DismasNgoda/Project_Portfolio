@@ -16,27 +16,27 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-5">
-                <form>
+                <form id="user-data" action="#">
                     <h1>Contact Us</h1>
                     <p>Get in touch with out friendly team of instructors</p>
                     <div class="form-div">
                         <div class="left-div">
                             <p>First Name</p>
-                            <input type="text" id="fname" minlength="2" maxlength="25" required>
+                            <input type="text" id="fname" name="First Name" minlength="2" maxlength="25" required>
                         </div>
                         <div class="right-div">
                             <p>Last Name</p>
-                            <input type="text" id="lname" minlength="2" maxlength="25" required>
+                            <input type="text" id="lname" name="Last Name" minlength="2" maxlength="25" required>
                         </div>
                     </div>
                     <div class="form-div2">
                         <p>School ID</p>
-                        <input type="text" id="school-id" minlength="4" maxlength="10" required>
+                        <input type="text" id="school-id" name="School ID" minlength="4" maxlength="10" required>
                         <p>Message</p>
-                        <textarea type="text" id="message" minlength="50" maxlength="200" required></textarea>
+                        <textarea type="text" id="message" name="Your Message" minlength="50" maxlength="200" required></textarea>
                     </div>
                     <div>
-                        <input class="btn-submit" type="submit" id="submit" value="Send Message">
+                        <input class="btn-submit" type="submit" onclick="submitData()" id="submit" value="Send Message">
                     </div>
                 </form>
             </div>
@@ -70,6 +70,11 @@
             </div>
         </div>
     </div>
+    <script>
+        function submitData(){
+            document.getElementById("user-data").submit();
+        }
+    </script>
 
 </body>
 
