@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    height: 540px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    border: 2px solid skyblue;
+    border-radius: 20px;
+    margin: 35px 315px;
+    box-shadow: 0 0 35px 9px #6b8bc51f;
+}
+img{
+    width: 330px;
+    height: 400px;
+    margin: 60px 0px; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* #img2 {
+    display: none;
+} */
+.formbox{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 35px 0px;
+    background-color: rgb(253, 253, 253);
+    padding: 5px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+h1{
+    color: skyblue;
+    margin: 20px auto;
+}
+.button-box{
+    width: 220px;
+    margin-top: 20px;
+    position: relative;
+    float: left;
+    background-color: white;
+    box-shadow: 0 0 35px 9px #9bb7eb1f;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+.btn{
+    top: 0;
+    left: 0; 
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #347fe0,#979795);
+    border-radius: 25px;
+    transition: 2s;
+}
+.btn1{
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right,#979795, #347fe0);
+    border: none;
+    border-radius: 25px; 
+    padding: 10px 30px;
+    margin: 20px 33px;
+    transition: 2s;
+}
+.input-group{
+    position: absolute;
+    top: 60px;
+    width: 280px;
+    transition: .1s;
+}
+.input-field{
+    padding: 20px auto;
+    margin: 10px auto;
+    background-color: #c2c2be;
+    border: none;
+    border-radius: 9px;
+    height: 30px;
+    text-align: center;
+}
+.forgot{
+    text-decoration: none;
+}
+button{
+    background-color: rgb(218, 214, 214);
+}
+.googleOp{
+border-radius: 7px;
+height: 30px;
+width: 220px;
+font-size: 15px;
+background-color: white;
+border: 2px solid skyblue;
+padding: 5px;
+}
+.fa-brands{
+    margin-right: 10px;
+    font-size: 18px;
+}
+#signup{
+    left: 50px;
+}
+#login{
+    left: 450px;
+}  
+@media screen and (max-width:800px) and (min-width:400px){
+    .hero{
+        height: 610px;
+        width: 700px;
+        justify-content: left;
+        padding: 15px;
+        border: 2px solid rgb(44, 78, 92);
+        border-radius: 18px;
+        margin: 10px;
+    }  
+        img{
+            display: flex;
+        }
+        .input-group{
+            position: absolute;
+            width: 300px;
+            padding: 80px;
+        }
+        .toggle-btn{
+            
+        } 
+}
+@media screen and (max-width:400px) {
+    
+    .hero{
+    height: 600px;
+    width: 330px;
+    justify-content: left;
+    padding: 15px;
+    border: 2px solid rgb(44, 78, 92);
+    border-radius: 18px;
+    margin: 15px 5px;
+}  
+    img{
+        display: none;
+    }
+    .input-group{
+        position: absolute;
+        width: 280px;
+        padding: 38px;
+    }
+    .toggle-btn{
+        padding: 10px 30px;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        outline: none;
+        position: relative;
+    }
+    
+}

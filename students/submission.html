@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body style="font-family: 'Inter', sans-serif;">
+
+    <!-- dashboard -->
+    <section>
+        <div class="container flex justify-between justify-items-center">
+            <div class="sidebar w-3/12 h- bg-blue-300 md:px-8 px-4 lg:py-8 md:py-6 py-4">
+                <div>
+                    <h2 class="font-bold md:text-2xl text-center text-xl">PROJECT MANAGER</h2>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img class="lg:w-1/4 md:w-1/2 w-3/4 mt-16 mb-4" src="../assets/images/profile-user.png" alt="profile-user">
+                    <h3 class="md:text-2xl text-xl font-semibold text-gray-800">John Doe</h3>
+                    <p class="md:text-lg text-md font-medium">SOMOOC1811</p>
+
+                    <div class="mt-16">
+                        <ul class="sidebar-list">
+                            <li class="my-4">
+                                <i class="fa fa-home md:text-4xl text-2xl md:mr-4 mr-2 text-gray-800" aria-hidden="true"></i>
+                                <a class="text-white font-semibold md:text-xl text-lg" id="links" href="#">Dashboard</a>
+                            </li>
+                            <li class="my-4">
+                                <i class="fa fa-user md:text-4xl text-2xl md:mr-4 mr-2 text-gray-800" aria-hidden="true"></i>
+                                <a class="text-white font-semibold md:text-xl text-lg" id="links" href="#">Account</a>
+                            </li>
+                            <li class="my-4">
+                                <i class="fa fa-thumbs-up md:text-4xl text-2xl md:mr-4 mr-2 text-gray-800" aria-hidden="true"></i>
+                                <a class="text-white font-semibold md:text-xl text-lg" id="links" href="approved.html">Approved</a>
+                            </li>
+                            <li class="my-4">
+                                <i class="fa fa-tasks md:text-4xl text-2xl md:mr-4 mr-2 text-gray-800" aria-hidden="true"></i>
+                                <a class="text-white font-semibold md:text-xl text-lg" id="links" href="pending.html">Pending</a>
+                            </li>
+                            <li class="my-4">
+                                <i class="fa fa-thumbs-down md:text-4xl text-2xl md:mr-4 mr-2 text-gray-800" aria-hidden="true"></i>
+                                <a class="text-white font-semibold md:text-xl text-lg" id="links" href="rejected.html">Rejected</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-sign-out md:text-4xl text-2xl mr-2 text-gray-800" aria-hidden="true"></i>
+                                <a class="text-white font-medium md:text-2xl text-xl" id="logout" href="#!">Log Out</a>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+                
+            </div>
+
+            <!--main-content-->
+            <div class="w-9/12">
+                <div class="inputs-container m-12">
+                    <h3 class="md:text-2xl text-xl font-bold text-gray-800">PROJECT SUBMISSION</h3>
+                    <form id="submission" method="post">
+                        <div class="flex flex-col gap-4 my-4">
+                            <label class="md:text-xl text-lg font-semibold text-gray-800" for="name">Project Name</label>
+                            <input class="border-2 border-blue-300 rounded-lg p-2" type="text" name="name" id="project-name">
+                        </div>
+                        <div class="flex flex-col gap-4 my-4">
+                            <label class="md:text-xl text-lg font-semibold text-gray-800" for="name">Subject/ Topic</label>
+                            <input class="border-2 border-blue-300 rounded-lg p-2" type="text" name="name" id="subject">
+                        </div>
+                        <div class="flex flex-col gap-4 my-4">
+                            <label class="md:text-xl text-lg font-semibold text-gray-800" for="name">Project Description</label>
+                            <input class="border-2 border-blue-300 rounded-lg p-2" type="text" name="name" id="description">
+                        </div>
+                        <div class="flex flex-col gap-4 my-4">
+                            <label class="md:text-xl text-lg font-semibold text-gray-800" for="name">Upload Your Project Here (Max 2MB)</label>
+                            <input class="border-4 border-dotted border-blue-300 rounded-lg py-12 px-8" type="file" name="upload" id="upload">
+                        </div>
+                        <div>
+                            <input class="bg-blue-400 py-3 px-16 rounded-lg cursor-pointer md:text-3xl text-xl font-bold text-gray-800 mt-8 text-white hover:bg-blue-500 hover:scale-105 hover:translate-y-4 duration-500" type="submit" id="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <script src="../assets/js/student.js"></script>
+</body>
+</html>
