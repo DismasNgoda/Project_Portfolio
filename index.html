@@ -5,104 +5,186 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/landpage.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <div class="nav">
-        <div class="navbar">
-            <h2>PROJECT MANAGER</h2>
-            <ul>
-                <li><a href="HOME">HOME</a></li>
-                <li><a href="STUDENTS">STUDENTS</a></li>
-                <li><a href="LECTURERS">LECTURERS</a></li>
-                <li><a href="CONTACT">CONTACT</a></li>
-                
-            </ul>
+    <!-- navbar -->
+    <nav class="nav">
+        <div class=" flex justify-between flex-wrap md:px-6 px-4 py-4 ">
+            <div class="flex items-center justify-between">
+                <div class="flex-shrink-0">
+                    <a href="#" class="flex items-center px-2 md:text-2xl text-lg font-semibold text-gray-800">
+                        PROJECT MANAGER
+                    </a>
+                </div>
         
-            <!--nav-btns-->
-        <div class="btn">
-            <button id="log"><a href="#"></a>LOG IN</button>
-        </div>
-        <div class="btn2">
-            <button id="sign"><a href="#"></a>SIGN UP</button>
-        </div>
-        
-        </div>
-        </div>
-
-        <div class="option">
-            <div class="title">
-            <h1>CHOOSE TO USE ONE OF THE BEST PROJECT MANAGERS FOR STUDENTS</h1>
-        </div>
-        <div class="btns">
-            <button id="get"><a href="#"></a><h2>Get Started</h2></button>
-        </div>
-        </div> 
-
-    <section>
-        <div class="clients">
-            <div class="happy">
-              <h3>Our Happy Clients</h3>
-              </div>
-              <div class="has">
-              <div class="fac">
-              <p>Faculties</p>
-              <p>10+</p>
-              </div>
-  
-              <div class="dep">
-              <p>Departments</p>
-              <p>32+</p>
-              </div>
-  
-              <div class="stud">
-              <p>Students</p>
-              <p>40,000+</p>
-              </div>
-              </div>
-        </div>
-    </section>
-
-            <div class="service">
-                <img src="./assets/images/firmbee-com-gcsNOsPEXfs-unsplash.jpg">
-                <div class="content">
-                <p>Project management system is a system for the management, tracking and supervision of students' final year projects.It is a web-based platform that is useful to both students and project managers. </p>
-                    
+                <!--main-menu-->
+                <div class="hidden text-md w-full md:flex md:flex-grow lg:flex lg:items-center lg:w-auto">
+                    <ul class="md:flex ">
+                        <li>
+                            <a href="#" class="block py-2 px-4 lg:inline-block text-white font-medium">
+                                HOME
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="block py-2 px-4 lg:inline-block text-white font-medium">
+                                STUDENTS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="block py-2 px-4 lg:inline-block text-white font-medium">
+                                LECTURERS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="block py-2 px-4 lg:inline-block text-white font-medium">
+                                CONTACT
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!--nav-btns-->
+                <!-- <div class="md:flex hidden">
+                    <button>
+                        LOGIN
+                    </button>
+                    <button>
+                        SIGNUP
+                    </button>
+                </div> -->
+    
+            </div>
+    
+            <!--menu-button-->
+            <div class="flex justify-center gap-4">
+                <div class="block md:hidden">
+                    <button class="menu-btn flex items-center px-3 py-2 border-2 rounded text-white border-white hover:border-white-300">
+                        <svg class="fill-current h-4 w-4" x-show="!showMenu" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                    </button>
                 </div>
             </div>
-            <div class="read">
-            <button>Read More</button>
-            </div>
-
-    <!--acitivity-->        
-    <section>
-        <div class="activity">
-            <p>Project management aims at reducing plagiarism chances.Both students and lecturers have access to this website where they can visit,view and upload previously done projects.Only lecturers can upload the projects while students can only view.</p>
-            <img src="./assets/images/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="">
+                   
         </div>
-    
-        <div class="read">
-            <button>Read More</button>
+
+
+        <!--mobile-menu-->
+        <div class="w-full flex flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="menu md:hidden text-sm lg:flex-grow md:flex md:text-xl text-left font-bold text-white px-6">
+                <a href="#!" class="block py-2 lg:inline-block">
+                    HOME
+                </a>
+                <a href="#!" class="block py-2 lg:inline-block">
+                    ABOUT
+                </a>
+                <a href="#!" class="block py-2 lg:inline-block">
+                    PROJECTS
+                </a>
+                <a href="#!" class="block py-2 lg:inline-block">
+                    CONTACT
+                </a>
+                <a href="#!" class="block py-2 px-3 lg:inline-block text-gray-800 bg-white my-4 rounded-md">
+                    LOGIN
+                </a>
+                <a href="#!" class="block py-2 px-3 lg:inline-block text-white hover:bg-gray-700 bg-gray-800 my-4 rounded-md duration-300">
+                    SIGNUP
+                </a>
+            </div>
+            
+        </div>
+
+
+    </nav>
+
+  <!--hero-section-->
+    <section>
+        <div class="option">
+            <div class="title">
+                <h1 class="md:text-5xl text-2xl font-bold text-center">CHOOSE TO USE ONE OF THE BEST PROJECT MANAGERS FOR STUDENTS</h1>
+            </div>
+            
+            <div class="btns">
+                <button id="get"><a href="#"></a><h2>Get Started</h2></button>
+            </div>
+        </div> 
+    </section>
+
+    <section>
+        <div class="clients xl:mx-64 lg:32 md:mx-16 mx-8 md:my-16 my-8">
+            <div class="happy">
+              <h1 class="font-semibold md:text-2xl text-xl my-4">Our Happy Clients</h1>
+              </div>
+              
+            <div class="has flex flex-row justify-around md:p-8 rounded-lg text-2xl font-semibold text-center">
+                <div class="my-4 fac">
+                    <p class="my-4">Faculties</p>
+                    <p>10+</p>
+                </div>
+  
+                <div class="my-4 dep">
+                    <p class="my-4">Departments</p>
+                    <p>32+</p>
+                </div>
+  
+                <div class="my-4 stud">
+                    <p class="my-4">Students</p>
+                    <p>40,000+</p>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section>
+        <div class="lg:mx-32 md:mx-16 mx-8 md:my-16 my-8 md:space-y-16 space-y-8">
+            <div class="service flex justify-between md:gap-16 gap-4 w-full ">
+                <!-- <div> -->
+                <img class="rounded-xl lg:w-1/3 md:w-1/2 w-full" src="./assets/images/firmbee-com-gcsNOsPEXfs-unsplash.jpg">
+                <!-- </div> -->
+
+                <div>
+                    <h3 class="font-semibold md:text-2xl text-lg my-4">Lorem, ipsum dolor.</h3>
+                    <p class="content">Project management system is a system for the management, tracking and supervision of students' final year projects.It is a web-based platform that is useful to both students and project managers. </p> 
+                    <button class="read rounded-lg py-2 px-4 mt-4">Read More</button>
+                </div>
+            </div>
+
+            <div class="service flex justify-between md:gap-16 gap-4 w-full ">
+                <div>
+                    <h3 class="font-semibold md:text-2xl text-lg my-4">Lorem, ipsum dolor.</h3>
+                    <p class="content">Project management aims at reducing plagiarism chances.Both students and lecturers have access to this website where they can visit,view and upload previously done projects.Only lecturers can upload the projects while students can only view.</p> 
+                    <button class="read rounded-lg py-2 px-4 mt-4">Read More</button>
+                </div>
+
+                <!-- <div> -->
+                <img class="rounded-xl lg:w-1/3 md:w-1/2 w-full" src="./assets/images/christopher-gower-m_HRfLhgABo-unsplash.jpg    ">
+                <!-- </div> -->
+            </div>
+
+        </div>
+        
+    </section>
+
+
 
             
     <!--testimonials-->
     <section>
-        <div class="feedback">
-            <h2>Testimonials</h2>
-            <p> What they think about the platform</p>
-        </div>
     
-        <div>
-            <div class="message">
+        <div class="lg:mx-32 md:mx-16 mx-8">
+                <h2 class="md:text-2xl text-xl font-semibold">Testimonials</h2>
+                <p> What they think about the platform</p>
+            <div class="message md:flex justify-between md:space-x-16 space-x-8 text-center">
+
                 <div class="jd">
-                    <img src="./assets/images/brian-tromp-oyoKfOhYtZI-unsplash.jpg" alt="">
-                    <p>John Doe</p>
-                    <p1 id="senior">Senior student</p>
-                    <p2 id="words">No need to worry about your project being plagiarised,this platform protects your work.</p>
-                    <div class="icons">
+                    <img class="rounded-xl" src="./assets/images/brian-tromp-oyoKfOhYtZI-unsplash.jpg" alt="">
+                    <h2 class="md:text-2xl text-xl font-semibold md:my-3 my-2">John Doe</h2>
+                    <p class="text-xl mb-2" id="senior">Senior student</p>
+                    <p class="md:my-4 my-2" id="words">No need to worry about your project being plagiarised,this platform protects your work.</p>
+                    <div class="icons md:text-2xl text-xl">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
                         <i class="fa fa-facebook" aria-hidden="true"></i>
                         <i class="fa fa-linkedin" aria-hidden="true"></i>
@@ -111,11 +193,11 @@
                 </div>  
         
                 <div class="jd">
-                    <img src="./assets/images/brian-tromp-oyoKfOhYtZI-unsplash.jpg" alt="">
-                    <p>John Doe</p>
-                    <p1 id="senior">Senior student</p>
-                    <p2 id="words">Why have a hard time accesing previously done projects?Project manager makes your work easy.</p>
-                    <div class="icons">
+                    <img class="rounded-xl" src="./assets/images/brian-tromp-oyoKfOhYtZI-unsplash.jpg" alt="">
+                    <h2 class="md:text-2xl text-xl font-semibold md:my-3 my-2">John Doe</h2>
+                    <p class="text-xl mb-2" id="senior">Senior student</p>
+                    <p class="md:my-4 my-2" id="words">Why have a hard time accesing previously done projects? Project manager makes your work easy.</p>
+                    <div class="icons md:text-2xl text-xl">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
                         <i class="fa fa-facebook" aria-hidden="true"></i>
                         <i class="fa fa-linkedin" aria-hidden="true"></i>
@@ -124,11 +206,11 @@
                 </div> 
         
                 <div class="jd">
-                    <img src="./assets/images/brian-tromp-oyoKfOhYtZI-unsplash.jpg" alt="">
-                    <p>John Doe</p>
-                    <p1 id="senior">Senior student</p>
-                    <p2 id="words">The best platform to learn about related projects on specific subjects.</p>
-                    <div class="icons">
+                    <img class="rounded-xl" src="./assets/images/brian-tromp-oyoKfOhYtZI-unsplash.jpg" alt="">
+                    <h2 class="md:text-2xl text-xl font-semibold md:my-3 my-2">John Doe</h2>
+                    <p class="text-xl mb-2" id="senior">Senior student</p>
+                    <p class="md:my-4 my-2" id="words">The best platform to learn about related projects on specific subjects.</p>
+                    <div class="icons md:text-2xl text-xl">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
                         <i class="fa fa-facebook" aria-hidden="true"></i>
                         <i class="fa fa-linkedin" aria-hidden="true"></i>
@@ -151,20 +233,21 @@
             </ul>
         </div>
 
-        <div class="inquiries">
+        <div class="inquiries flex justify-around">
             <div class="ask">
-                <h2> Keep us updated.For any inquiries</h2>
+                <h2 class="lg:text-6xl md:text-4xl text-2xl md:font-bold font-semibold text-gray-800"> Keep us updated! For any inquiries</h2>
             </div>
-            <div class="reach">
-                <button>Reach Out</button>
-            </div>
+            
+            <a href="contact.html" class="reach cursor-pointer py-4 px-8 rounded-xl md:text-2xl text-xl font-semibold">
+                Reach Out
+            </a>
         </div>
     </section>
 
            
     <!--footer-->
-    <footer>
-        <div class="footer">
+    <footer class="">
+        <div class="footer flex justify-around md:py-8 py-4">
             <div class="manage"> 
                <h3>PROJECT MANAGER</h3>
                <p>You can trust us with all your projects.Visit now and sign up.</p>
@@ -203,11 +286,18 @@
         </div>
 
           <!--copyright-->
-        <div class="copyright">
-            <h3>COPYRIGHT &copy; 2022 |PROJECT MANAGER</h3>
+        <div class="copyright py-4">
+            <h3 class="text-gray-700">COPYRIGHT &copy; 2022 | PROJECT MANAGER</h3>
         </div>
     </footer>
 
-         
+
+
+
+
+
+
+
+    <script src="./assets/js/script.js"></script>     
 </body>
 </html>
