@@ -13,27 +13,93 @@
 </head>
 
 <body>
-    <div class="nav">
-        <div class="navbar">
-            <h2>PROJECT MANAGER</h2>
-            <ul>
-                <li><a href="HOME">HOME</a></li>
-                <li><a href="STUDENTS">STUDENTS</a></li>
-                <li><a href="LECTURERS">LECTURERS</a></li>
-                <li><a href="CONTACT">CONTACT</a></li>
-
-            </ul>
-
-            <div class="btn">
-                <button id="log"><a href="#"></a>LOG IN</button>
+     <!-- navbar -->
+     <nav class="nav">
+        <div class=" flex justify-between flex-wrap md:px-6 px-4 py-4 ">
+            <div class="flex items-center justify-between">
+                <div class="flex-shrink-0">
+                    <a href="#" class="flex items-center px-2 md:text-2xl text-lg font-semibold text-gray-800">
+                        PROJECT MANAGER
+                    </a>
+                </div>
+        
+                <!--main-menu-->
+                <div class="hidden text-md w-full md:flex md:flex-grow lg:flex lg:items-center lg:w-auto">
+                    <ul class="md:flex ">
+                        <li>
+                            <a href="#" class="block py-2 px-4 lg:inline-block text-white font-medium">
+                                HOME
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="block py-2 px-4 lg:inline-block text-white font-medium">
+                                STUDENTS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="block py-2 px-4 lg:inline-block text-white font-medium">
+                                LECTURERS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="block py-2 px-4 lg:inline-block text-white font-medium">
+                                CONTACT
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!--nav-btns-->
+                <!-- <div class="md:flex hidden">
+                    <button>
+                        LOGIN
+                    </button>
+                    <button>
+                        SIGNUP
+                    </button>
+                </div> -->
+    
             </div>
-
-            <div class="btn2">
-                <button id="sign"><a href="#"></a>SIGN UP</button>
+    
+            <!--menu-button-->
+            <div class="flex justify-center gap-4">
+                <div class="block md:hidden">
+                    <button class="menu-btn flex items-center px-3 py-2 border-2 rounded text-white border-white hover:border-white-300">
+                        <svg class="fill-current h-4 w-4" x-show="!showMenu" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                    </button>
+                </div>
             </div>
-
+                   
         </div>
-    </div>
+
+
+        <!--mobile-menu-->
+        <div class="w-full flex flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="menu md:hidden text-sm lg:flex-grow md:flex md:text-xl text-left font-bold text-white px-6">
+                <a href="#!" class="block py-2 lg:inline-block">
+                    HOME
+                </a>
+                <a href="#!" class="block py-2 lg:inline-block">
+                    ABOUT
+                </a>
+                <a href="#!" class="block py-2 lg:inline-block">
+                    PROJECTS
+                </a>
+                <a href="#!" class="block py-2 lg:inline-block">
+                    CONTACT
+                </a>
+                <a href="#!" class="block py-2 px-3 lg:inline-block text-gray-800 bg-white my-4 rounded-md">
+                    LOGIN
+                </a>
+                <a href="#!" class="block py-2 px-3 lg:inline-block text-white hover:bg-gray-700 bg-gray-800 my-4 rounded-md duration-300">
+                    SIGNUP
+                </a>
+            </div>
+            
+        </div>
+
+
+    </nav>
 <!-- Start of contact page -->
     <div class="container">
         <div class="row">
@@ -93,12 +159,15 @@
             </div>
         </div>
     </div>
-    <div class="footer">
+ <!--footer-->
+ <footer class="">
+    <div class="footer flex justify-around md:py-8 py-4">
         <div class="manage"> 
            <h3>PROJECT MANAGER</h3>
            <p>You can trust us with all your projects.Visit now and sign up.</p>
 
        </div> 
+<<<<<<< HEAD
         <!-- <div class="click"> -->
           <div class="link">
             <ul>
@@ -129,6 +198,45 @@
           </div>
         </div>
       </div>
+=======
+
+        <!-- site links -->
+        <div class="link">
+            <ul>
+                <a href=""><li>LINKS</li></a>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>Students</li></a>
+                <a href=""><li>Lecturers</li></a>
+                <a href=""><li>Contact</li></a>
+            </ul>
+        </div> 
+          
+        <div class="support">
+            <ul>
+                <a href=""><li>SUPPORT</li></a>
+                <a href=""><li>FAQ's</li></a>
+                <a href=""><li>About</li></a>
+                <a href=""><li>Help Center</li></a> 
+            </ul>
+        </div>
+
+        <div class="contact">
+            <ul>
+                <a href=""><li>CONTACT</li></a>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>Home</li></a> 
+            </ul>
+        </div>
+        <!-- </div> -->
+    </div>
+
+      <!--copyright-->
+    <div class="copyright py-4">
+        <h3 class="text-gray-700">COPYRIGHT &copy; 2022 | PROJECT MANAGER</h3>
+    </div>
+</footer>
+>>>>>>> f1af27063669b3faef8f205ad8b1a0c6f9826898
     <script>
         function submitData() {
             document.getElementById("user-data").submit();
