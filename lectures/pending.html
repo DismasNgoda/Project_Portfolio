@@ -11,6 +11,7 @@
 
 </head>
 <body style="font-family: 'Inter', sans-serif;">
+
     <!-- dashboard -->
     <section>
         <!--sidebar-->
@@ -50,70 +51,72 @@
                                 <i class="fa fa-sign-out md:text-4xl text-2xl mr-2 text-gray-800" aria-hidden="true"></i>
                                 <a class="text-white font-medium md:text-2xl text-xl" id="logout" href="#!">Log Out</a>
                             </li>
-                        </ul>
-                    </div>  
+                        </ul>  
+                    </div>
                 </div>
-
-                
             </div>
 
             <!--main-content-->
             <div class="w-9/12">
-                <div class="inputs-container lg:mx-24 md:mx-12 mx-6 my-8">
+                <div class="inputs-container m-12">
                     <div>
                         <input class="border-2 border-blue-300 rounded-lg p-2 w-full" type="text" placeholder="Search for projects..." id="subject">
                     </div>
 
-                    
+                    <div class="flex justify-between flex-shrink text-gray-800 mt-8 mb-4">
+                        <div class="flex items-center cursor-pointer bg-gray-300 hover:bg-blue-300 hover:text-white font-semibold py-2 px-4 rounded-md shadow-md hover:shadow-lg hover:scale-110 hover:translate-y-2 duration-500">
+                            <p class="mr-2">ALL</p>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="cursor-pointer bg-gray-300 hover:bg-blue-300 hover:text-white font-semibold py-2 px-4 rounded-md shadow-md hover:shadow-lg hover:scale-110 hover:translate-y-2 duration-500">
+                            <p class="">TECHNOLOGY</p>
+                        </div>
+                        <div class="cursor-pointer bg-gray-300 hover:bg-blue-300 hover:text-white font-semibold py-2 px-4 rounded-md shadow-md hover:shadow-lg hover:scale-110 hover:translate-y-2 duration-500">
+                            <p class="">AGRICULTURE</p>
+                        </div>
+                        <div class="cursor-pointer bg-gray-300 hover:bg-blue-300 hover:text-white font-semibold py-2 px-4 rounded-md shadow-md hover:shadow-lg hover:scale-110 hover:translate-y-2 duration-500">
+                            <p class="">HEALTH</p>
+                        </div>
+                        <div class="cursor-pointer bg-gray-300 hover:bg-blue-300 hover:text-white font-semibold py-2 px-4 rounded-md shadow-md hover:shadow-lg hover:scale-110 hover:translate-y-2 duration-500">
+                            <p class="">ENGINEERING</p>
+                        </div>
+                        <div class="cursor-pointer bg-gray-300 hover:bg-blue-300 hover:text-white font-semibold py-2 px-4 rounded-md shadow-md hover:shadow-lg hover:scale-110 hover:translate-y-2 duration-500">
+                            <p class="">BUSINESS</p>
+                        </div>
+                    </div>
+
                     <!--cards-container-->
                     <div>
                         <div>
-                            <h3 class="md:text-2xl text-xl text-gray-800 font-semibold mb-4 mt-8">PROJECT SUMMARY</h3>
-                            <div class="flex md:flex-row flex-col justify-between lg:gap-16 md:gap-8 text-center md:text-xl text-lg font-semibold">
-                                <a href="./approved.html" class="md:w-1/2 w-full p-6 bg-gray-200 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 hover:translate-y-4 duration-500">
-                                    <p>APPROVED</p>
-                                    <p>550</p>
-                                </a>
-                                <a href="./pending.html" class="md:w-1/2 w-full text-white p-6 bg-blue-300 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 hover:translate-y-4 duration-500">
-                                    <p>PENDING</p>
-                                    <p>120</p>
-                                </a>
-                                <a href="./rejected.html" class="md:w-1/2 w-full p-6 bg-gray-200 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 hover:translate-y-4 duration-500">
-                                    <p>REJECTED</p>
-                                    <p>34</p>
-                                </a>
-                            </div>
-
-                            <div class="md:mt-16 mt-8">
-                                <h3 class="md:text-2xl text-xl text-gray-800 font-semibold mt-8 mb-4">PENDING PROJECTS</h3>
-                                <div class="flex md:flex-row flex-col justify-between lg:gap-16 md:gap-8 ">
-                                    <div class="md:w-1/2 w-full p-6 bg-gray-200 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 hover:translate-y-4 duration-500">
-                                        <img class="rounded-xl" src="../assets/images/card.jpg" alt="">
-                                        <h3 class="font-semibold my-4 ">Senior Project Management</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptatem.</p>
-                                        <button class="bg-blue-400 py-2 px-3 rounded-md mt-4 text-white font-medium">
-                                            Project Details
-                                        </button>
-                                    </div>
-                                    <div class="md:w-1/2 w-full p-6 bg-gray-200 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 hover:translate-y-4 duration-500">
-                                        <img class="rounded-xl" src="../assets/images/card.jpg" alt="">
-                                        <h3 class="font-semibold my-4 ">Senior Project Management</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptatem.</p>
-                                        <button class="bg-blue-400 py-2 px-3 rounded-md mt-4 text-white font-medium">
-                                            Project Details
-                                        </button>
-                                    </div>
-                                    <div class="md:w-1/2 w-full p-6 bg-gray-200 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 hover:translate-y-4 duration-500">
-                                        <img class="rounded-xl" src="../assets/images/card.jpg" alt="">
-                                        <h3 class="font-semibold my-4 ">Senior Project Management</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptatem.</p>
-                                        <button class="bg-blue-400 py-2 px-3 rounded-md mt-4 text-white font-medium">
-                                            Project Details
-                                        </button>
-                                    </div>
+                            <h3 class="md:text-2xl text-xl text-gray-800 font-semibold mb-4 mt-8">PENDING</h3>
+                            <div class="flex md:flex-row flex-col justify-between lg:gap-16 md:gap-8 ">
+                                <div class="md:w-1/2 w-full p-6 bg-gray-200 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 hover:translate-y-4 duration-500">
+                                    <img class="rounded-xl" src="../assets/images/card.jpg" alt="">
+                                    <h3 class="font-semibold my-4 ">Senior Project Management</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptatem.</p>
+                                    <button class="bg-blue-400 py-2 px-3 rounded-md mt-4 text-white font-medium">
+                                        Project Details
+                                    </button>
+                                </div>
+                                <div class="md:w-1/2 w-full p-6 bg-gray-200 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 hover:translate-y-4 duration-500">
+                                    <img class="rounded-xl" src="../assets/images/card.jpg" alt="">
+                                    <h3 class="font-semibold my-4 ">Senior Project Management</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptatem.</p>
+                                    <button class="bg-blue-400 py-2 px-3 rounded-md mt-4 text-white font-medium">
+                                        Project Details
+                                    </button>
+                                </div>
+                                <div class="md:w-1/2 w-full p-6 bg-gray-200 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 hover:translate-y-4 duration-500">
+                                    <img class="rounded-xl" src="../assets/images/card.jpg" alt="">
+                                    <h3 class="font-semibold my-4 ">Senior Project Management</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptatem.</p>
+                                    <button class="bg-blue-400 py-2 px-3 rounded-md mt-4 text-white font-medium">
+                                        Project Details
+                                    </button>
                                 </div>
                             </div>
 
+                            
                             <div class="flex justify-between md:text-xl text-lg md:mt-8 mt-4">
                                 <button class="bg-blue-400 py-2 px-3 rounded-md mt-4 text-white font-medium hover:scale-110 hover:translate-y-2 duration-500">
                                     <i class="fa fa-arrow-left" aria-hidden="true"></i>
@@ -124,9 +127,9 @@
                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                 </button>
                             </div> 
-                        <div>
 
                         </div>
+                    </div>
 
                 </div>
             </div>
