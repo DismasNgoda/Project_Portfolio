@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/contact_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+        <!-- <link rel="stylesheet" href="./assets/css/landpage.css">
+        <link rel="stylesheet" href="./assets/css/style.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+     <!-- navbar -->
+     <nav class="nav">
+        <div class=" flex justify-between flex-wrap md:px-6 px-4 py-4 ">
+            <div class="flex items-center justify-between">
+                <div class="flex-shrink-0">
+                    <a href="#" class="flex items-center px-2 md:text-2xl text-lg font-semibold text-gray-800">
+                        PROJECT MANAGER
+                    </a>
+                </div>
+        
+                <!--main-menu-->
+                <div class="hidden text-md w-full md:flex md:flex-grow lg:flex lg:items-center lg:w-auto">
+                    <ul class="md:flex ">
+                        <li>
+                            <a href="#" class="block py-2 px-4 lg:inline-block text-white font-medium">
+                                HOME
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="block py-2 px-4 lg:inline-block text-white font-medium">
+                                STUDENTS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="block py-2 px-4 lg:inline-block text-white font-medium">
+                                LECTURERS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="block py-2 px-4 lg:inline-block text-white font-medium">
+                                CONTACT
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!--nav-btns-->
+                <!-- <div class="md:flex hidden">
+                    <button>
+                        LOGIN
+                    </button>
+                    <button>
+                        SIGNUP
+                    </button>
+                </div> -->
+    
+            </div>
+    
+            <!--menu-button-->
+            <div class="flex justify-center gap-4">
+                <div class="block md:hidden">
+                    <button class="menu-btn flex items-center px-3 py-2 border-2 rounded text-white border-white hover:border-white-300">
+                        <svg class="fill-current h-4 w-4" x-show="!showMenu" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                    </button>
+                </div>
+            </div>
+                   
+        </div>
+
+
+        <!--mobile-menu-->
+        <div class="w-full flex flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="menu md:hidden text-sm lg:flex-grow md:flex md:text-xl text-left font-bold text-white px-6">
+                <a href="#!" class="block py-2 lg:inline-block">
+                    HOME
+                </a>
+                <a href="#!" class="block py-2 lg:inline-block">
+                    ABOUT
+                </a>
+                <a href="#!" class="block py-2 lg:inline-block">
+                    PROJECTS
+                </a>
+                <a href="#!" class="block py-2 lg:inline-block">
+                    CONTACT
+                </a>
+                <a href="#!" class="block py-2 px-3 lg:inline-block text-gray-800 bg-white my-4 rounded-md">
+                    LOGIN
+                </a>
+                <a href="#!" class="block py-2 px-3 lg:inline-block text-white hover:bg-gray-700 bg-gray-800 my-4 rounded-md duration-300">
+                    SIGNUP
+                </a>
+            </div>
+            
+        </div>
+
+
+    </nav>
+<!-- Start of contact page -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <form id="user-data" action="#">
+                    <h1>Contact Us</h1>
+                    <p>Get in touch with out friendly team of instructors</p>
+                    <div class="form-div">
+                        <div class="left-div">
+                            <p>First Name</p>
+                            <input type="text" id="fname" name="First Name" minlength="2" maxlength="25" required>
+                        </div>
+                        <div class="right-div">
+                            <p>Last Name</p>
+                            <input type="text" id="lname" name="Last Name" minlength="2" maxlength="25" required>
+                        </div>
+                    </div>
+                    <div class="form-div2">
+                        <p>School ID</p>
+                        <input type="text" id="school-id" name="School ID" minlength="4" maxlength="10" required>
+                        <p>Message</p>
+                        <textarea type="text" id="message" name="Your Message" minlength="50" maxlength="200"
+                            required></textarea>
+                    </div>
+                    <div>
+                        <input class="btn-submit" type="submit" onclick="submitData()" id="submit" value="Send Message">
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-sm-7 icons">
+                <div class="row section">
+                    <div class="section-items" id="phone">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p>Our 24/7 Toll Free Number</p>
+                        <p>0101010101010</p>
+                    </div>
+                    <div class="section-items" id="email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p>General Enquiries</p>
+                        <p>projo@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="row section">
+                    <div class="section-items" id="location">
+                        <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                        <p>Location</p>
+                        <p>UoN Plaza, Nairobi</p>
+                    </div>
+                    <div class="section-items" id="support-email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p>Technical Enquiries</p>
+                        <p>support@projo.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!--footer-->
+ <footer class="">
+    <div class="footer flex justify-around md:py-8 py-4">
+        <div class="manage"> 
+           <h3>PROJECT MANAGER</h3>
+           <p>You can trust us with all your projects.Visit now and sign up.</p>
+
+       </div> 
+        <!-- site links -->
+        <div class="link">
+            <ul>
+                <a href=""><li>LINKS</li></a>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>Students</li></a>
+                <a href=""><li>Lecturers</li></a>
+                <a href=""><li>Contact</li></a>
+            </ul>
+        </div> 
+          
+        <div class="support">
+            <ul>
+                <a href=""><li>SUPPORT</li></a>
+                <a href=""><li>FAQ's</li></a>
+                <a href=""><li>About</li></a>
+                <a href=""><li>Help Center</li></a> 
+            </ul>
+        </div>
+
+        <div class="contact">
+            <ul>
+                <a href=""><li>CONTACT</li></a>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>Home</li></a> 
+            </ul>
+        </div>
+        <!-- </div> -->
+    </div>
+
+      <!--copyright-->
+    <div class="copyright py-4">
+        <h3 class="text-gray-700">COPYRIGHT &copy; 2022 | PROJECT MANAGER</h3>
+    </div>
+</footer>
+    <script>
+        function submitData() {
+            document.getElementById("user-data").submit();
+        }
+    </script>
+
+</body>
+
+</html>

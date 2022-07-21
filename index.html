@@ -6,56 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Manager</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/landpage.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
-<body style="font-family: 'Inter', sans-serif;">
-    
+
+<body>
     <!-- navbar -->
-    <nav class="bg-blue-300">
-        <div class=" flex justify-between flex-wrap md:px-6 px-4 py-6">
+    <nav class="nav">
+        <div class=" flex justify-between flex-wrap md:px-6 px-4 py-4 ">
             <div class="flex items-center justify-between">
                 <div class="flex-shrink-0">
-                    <a href="#" class="flex items-center px-2 md:text-2xl text-lg font-semibold text-gray-800">
+                    <a href="#" class="flex items-center px-2 md:text-2xl text-xl font-semibold text-gray-800">
                         PROJECT MANAGER
                     </a>
                 </div>
         
                 <!--main-menu-->
                 <div class="hidden text-md w-full md:flex md:flex-grow lg:flex lg:items-center lg:w-auto">
-                    <ul class="md:flex ">
+                    <ul class="md:flex justify-between font-semibold">
                         <li>
-                            <a href="#!" class="block py-2 px-4 lg:inline-block text-white font-medium">
+                            <a href="#" class="block py-2 px-3 md:mx-6 mx-0 lg:inline-block text-white hover:bg-gray-700 bg-gray-800 my-4 rounded-md duration-300">
                                 HOME
                             </a>
                         </li>
                         <li>
-                            <a href="#!" class="block py-2 px-4 lg:inline-block text-white font-medium">
-                                ABOUT
+                            <a href="login.html" class="block py-2 px-3 md:mx-6 mx-0 lg:inline-block text-white hover:text-gray-800 hover:bg-white my-4 rounded-md duration-300">
+                                STUDENTS
                             </a>
                         </li>
                         <li>
-                            <a href="#!" class="block py-2 px-4 lg:inline-block text-white font-medium">
-                                PROJECTS
+                            <a href="login.html" class="block py-2 px-3 md:mx-6 mx-0 lg:inline-block text-white hover:text-gray-800 hover:bg-white my-4 rounded-md duration-300">
+                                LECTURERS
                             </a>
                         </li>
                         <li>
-                            <a href="#!" class="block py-2 px-4 lg:inline-block text-white font-medium">
+                            <a href="contact.html" class="block py-2 px-3 md:mx-6 mx-0 lg:inline-block text-white hover:text-gray-800 hover:bg-white my-4 rounded-md duration-300">
                                 CONTACT
                             </a>
                         </li>
                     </ul>
-                </div>
-    
-                <!--nav-btns-->
-                <div class="md:flex hidden">
-                    <button src="dashboard.html">
-                        LOGIN
-                    </button>
-                    <button>
-                        SIGNUP
-                    </button>
                 </div>
     
             </div>
@@ -73,25 +63,19 @@
 
 
         <!--mobile-menu-->
-        <div class="w-full flex flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="w-full flex flex-grow lg:flex lg:items-center lg:w-auto pb-4">
             <div class="menu md:hidden text-sm lg:flex-grow md:flex md:text-xl text-left font-bold text-white px-6">
-                <a href="#!" class="block py-2 lg:inline-block">
+                <a href="#" class="block py-2 px-3 lg:inline-block text-white hover:bg-gray-700 bg-gray-800 my-4 rounded-md duration-300">
                     HOME
                 </a>
-                <a href="#!" class="block py-2 lg:inline-block">
-                    ABOUT
+                <a href="login.html" class="block py-2 px-3 lg:inline-block text-white hover:text-gray-800 hover:bg-white my-4 rounded-md duration-300">
+                    STUDENTS
                 </a>
-                <a href="#!" class="block py-2 lg:inline-block">
-                    PROJECTS
+                <a href="login.html" class="block py-2 px-3 lg:inline-block text-white hover:text-gray-800 hover:bg-white my-4 rounded-md duration-300">
+                    LECTURERS
                 </a>
-                <a href="#!" class="block py-2 lg:inline-block">
+                <a href="contact.html" class="block py-2 px-3 lg:inline-block text-white hover:text-gray-800 hover:bg-white my-4 rounded-md duration-300">
                     CONTACT
-                </a>
-                <a href="#!" class="block py-2 px-3 lg:inline-block text-gray-800 bg-white my-4 rounded-md">
-                    LOGIN
-                </a>
-                <a href="#!" class="block py-2 px-3 lg:inline-block text-white hover:bg-gray-700 bg-gray-800 my-4 rounded-md duration-300">
-                    SIGNUP
                 </a>
             </div>
             
@@ -100,9 +84,217 @@
 
     </nav>
 
+    <!--hero-section-->
+    <section>
+        <div class="relative">
+            <img src="./assets/images/jason-goodman-Oalh2MojUuk-unsplash.jpg" />
+            <h1 class="absolute md:text-6xl text-2xl font-bold text-center text-gray-600 lg:top-1/4 md:top-1/3 top-1/2   left-1/2 -translate-x-1/2 -translate-y-1/2">
+                CHOOSE TO USE ONE OF THE BEST PROJECT MANAGERS FOR STUDENTS
+            </h1>
+            <a href="login.html" id="get" class="reach absolute hover:translate-y-4 hover:scale-110 duration-300 cursor-pointer py-4 px-8 rounded-xl md:text-2xl text-xl font-semibold lg: md:top-1/2 top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                Get Started
+            </a> 
+            
+        </div>
+        
+    </section>
 
+    <section>
+        <div class="clients xl:mx-64 lg:32 md:mx-16 mx-8 md:my-32 my-8">
+            <div class="happy">
+              <h1 class="font-semibold md:text-3xl text-2xl my-4">Our Happy Clients</h1>
+              </div>
+              
+            <div class="has flex flex-row justify-around md:p-8 rounded-lg text-2xl font-semibold text-center shadow-lg hover:shadow-xl hover:shadow-lg hover:scale-105 hover:translate-y-2 duration-500">
+                <div class="my-4 fac">
+                    <p class="my-4">Faculties</p>
+                    <p>10+</p>
+                </div>
+  
+                <div class="my-4 dep">
+                    <p class="my-4">Departments</p>
+                    <p>32+</p>
+                </div>
+  
+                <div class="my-4 stud">
+                    <p class="my-4">Students</p>
+                    <p>40,000+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="lg:mx-32 md:mx-16 mx-8 md:my-16 my-8 md:space-y-16 space-y-8">
+            <div class="service flex justify-between md:gap-16 gap-4 w-full ">
+                <!-- <div> -->
+                <img class="rounded-xl w-full" src="./assets/images/firmbee-com-gcsNOsPEXfs-unsplash.jpg">
+                <!-- </div> -->
+
+                <div>
+                    <h3 class="font-semibold md:text-2xl text-lg my-4">Lorem, ipsum dolor.</h3>
+                    <p class="content">Project management system is a system for the management, tracking and supervision of students' final year projects.It is a web-based platform that is useful to both students and project managers. </p> 
+                    <button class="read rounded-lg py-2 px-4 mt-4">Read More</button>
+                </div>
+            </div>
+
+            <div class="service flex justify-between md:gap-16 gap-4 w-full ">
+                <div>
+                    <h3 class="font-semibold md:text-2xl text-lg my-4">Lorem, ipsum dolor.</h3>
+                    <p class="content">Project management aims at reducing plagiarism chances.Both students and lecturers have access to this website where they can visit,view and upload previously done projects.Only lecturers can upload the projects while students can only view.</p> 
+                    <button class="read rounded-lg py-2 px-4 mt-4">Read More</button>
+                </div>
+
+                <!-- <div> -->
+                <img class="rounded-xl w-full" src="./assets/images/christopher-gower-m_HRfLhgABo-unsplash.jpg    ">
+                <!-- </div> -->
+            </div>
+
+        </div>
+        
+    </section>
+
+
+
+            
+    <!--testimonials-->
+    <section>
     
-    
+        <div class="lg:mx-32 md:mx-16 mx-8 md:my-32">
+                <h2 class="md:text-2xl text-xl font-semibold">Testimonials</h2>
+                <p> What they think about the platform</p>
+            <div class="message md:flex justify-between md:space-x-16 space-x-8 text-center">
+
+                <div class="jd shadow-lg hover:shadow-2xl md:p-8 p-4 rounded-2xl hover:shadow-lg hover:scale-110 hover:translate-y-2 duration-500">
+                    <img class="rounded-xl" src="./assets/images/brian-tromp-oyoKfOhYtZI-unsplash.jpg" alt="">
+                    <h2 class="md:text-2xl text-xl font-semibold md:my-3 my-2">John Doe</h2>
+                    <p class="text-xl mb-2" id="senior">Senior student</p>
+                    <p class="md:my-4 my-2" id="words">No need to worry about your project being plagiarised,this platform protects your work.</p>
+                    
+                    <div class="icons md:text-2xl text-xl">
+                        <a href="#">
+                            <i class="hover:text-gray-500 fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="hover:text-gray-500 fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="hover:text-gray-500 fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="hover:text-gray-500 fa fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>  
+        
+                <div class="jd shadow-lg hover:shadow-2xl md:p-8 p-4 rounded-2xl hover:shadow-lg hover:scale-110 hover:translate-y-2 duration-500">
+                    <img class="rounded-xl" src="./assets/images/brian-tromp-oyoKfOhYtZI-unsplash.jpg" alt="">
+                    <h2 class="md:text-2xl text-xl font-semibold md:my-3 my-2">John Doe</h2>
+                    <p class="text-xl mb-2" id="senior">Senior student</p>
+                    <p class="md:my-4 my-2" id="words">Why have a hard time accesing previously done projects? Project manager makes your work easy.</p>
+                    
+                    <div class="icons md:text-2xl text-xl">
+                        <a href="#">
+                            <i class="hover:text-gray-500 fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="hover:text-gray-500 fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="hover:text-gray-500 fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="hover:text-gray-500 fa fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div> 
+        
+                <div class="jd shadow-lg hover:shadow-2xl md:p-8 p-4 rounded-2xl hover:shadow-lg hover:scale-110 hover:translate-y-2 duration-500">
+                    <img class="rounded-xl" src="./assets/images/brian-tromp-oyoKfOhYtZI-unsplash.jpg" alt="">
+                    <h2 class="md:text-2xl text-xl font-semibold md:my-3 my-2">John Doe</h2>
+                    <p class="text-xl mb-2" id="senior">Senior student</p>
+                    <p class="md:my-4 my-2" id="words">The best platform to learn about related projects on specific subjects.</p>
+                    
+                    <div class="icons md:text-2xl text-xl">
+                        <a href="#">
+                            <i class="hover:text-gray-500 fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="hover:text-gray-500 fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="hover:text-gray-500 fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="hover:text-gray-500 fa fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+    </section>
+
+    <!--benefits-->
+    <section >
+
+        <div class="inquiries flex justify-around md:px-0 px-4">
+            <div class="ask">
+                <h2 class="lg:text-6xl md:text-4xl text-3xl md:font-bold font-semibold text-gray-100"> Keep us updated! For any inquiries</h2>
+            </div>
+            
+            <a href="contact.html" class="reach hover:translate-y-4 hover:scale-110 duration-300 cursor-pointer py-4 px-8 rounded-xl md:text-2xl text-xl font-semibold">
+                Reach Out
+            </a>
+        </div>
+    </section>
+
+           
+    <!--footer-->
+    <footer class="">
+        <div class="footer flex justify-around md:px-0 px-4 md:py-8 py-4">
+            <div class="manage"> 
+               <h3 class="md:text-3xl text-2xl font-semibold">PROJECT MANAGER</h3>
+               <p class="md:text-xl text-md mt-2">You can trust us with all your projects. Visit now and sign up. Visit now and sign up.</p>
+
+           </div> 
+
+            <!-- site links -->
+            <div class="link">
+                <ul>
+                    <a href=""><li>LINKS</li></a>
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>Students</li></a>
+                    <a href=""><li>Lecturers</li></a>
+                    <a href=""><li>Contact</li></a>
+                </ul>
+            </div> 
+              
+            <div class="support">
+                <ul>
+                    <a href=""><li>SUPPORT</li></a>
+                    <a href=""><li>FAQ's</li></a>
+                    <a href=""><li>About</li></a>
+                    <a href=""><li>Help Center</li></a> 
+                </ul>
+            </div>
+
+            <div class="contact">
+                <ul>
+                    <a href=""><li>CONTACT</li></a>
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>Home</li></a> 
+                </ul>
+            </div>
+            <!-- </div> -->
+        </div>
+
+          <!--copyright-->
+        <div class="copyright py-4">
+            <h3 class="text-gray-700 font-semibold">COPYRIGHT &copy; 2022 | PROJECT MANAGER</h3>
+        </div>
+    </footer>
 
 
 
@@ -111,16 +303,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>     
 </body>
 </html>
