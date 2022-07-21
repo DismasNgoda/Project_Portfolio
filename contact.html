@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/contact_style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://cdn.tailwindcss.com"></script>
-        <!-- <link rel="stylesheet" href="./assets/css/landpage.css">
-        <link rel="stylesheet" href="./assets/css/style.css"> -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/contact_style.css">
+    <link rel="stylesheet" href="./assets/css/landpage.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -52,16 +51,6 @@
                         </li>
                     </ul>
                 </div>
-    
-                <!--nav-btns-->
-                <!-- <div class="md:flex hidden">
-                    <button>
-                        LOGIN
-                    </button>
-                    <button>
-                        SIGNUP
-                    </button>
-                </div> -->
     
             </div>
     
@@ -104,51 +93,81 @@
 
 
     </nav>
-<!-- Start of contact page -->
-    <div class="container">
-        <div class="row">
+
+
+    <!-- contact section -->
+    <div class="container lg:my-44 md:my-24 my-16 lg:px-32 md:px-16 px-8">
+        <div class="row md:flex flex-shrink justify-between">
             <div class="col-sm-5">
+
                 <form id="user-data" action="#">
-                    <h1>Contact Us</h1>
+                    <h1 class="font-semibold lg:text-4xl md:text-2xl text-lg">Contact Us</h1>
                     <p>Get in touch with out friendly team of instructors</p>
-                    <div class="form-div">
-                        <div class="left-div">
-                            <p>First Name</p>
-                            <input type="text" id="fname" name="First Name" minlength="2" maxlength="25" required>
+                    <div class="form-div md:flex justify-between">
+                        <div class="my-2 flex flex-col">
+                            <label class="my-2 font-semibold">First Name</label>
+                            <input class="px-1 py-2 rounded-lg" type="text" id="fname" name="First Name" minlength="2" maxlength="25" required>
                         </div>
-                        <div class="right-div">
-                            <p>Last Name</p>
-                            <input type="text" id="lname" name="Last Name" minlength="2" maxlength="25" required>
+                        <div class="my-2 flex flex-col md:ml-8 md:ml-4">
+                            <label class="my-2 font-semibold">Last Name</label>
+                            <input  class="px-1 py-2 rounded-lg"type="text" id="lname" name="Last Name" minlength="2" maxlength="25" required>
                         </div>
                     </div>
-                    <div class="form-div2">
-                        <p>School ID</p>
-                        <input type="text" id="school-id" name="School ID" minlength="4" maxlength="10" required>
-                        <p>Message</p>
-                        <textarea type="text" id="message" name="Your Message" minlength="50" maxlength="200"
-                            required></textarea>
+
+                    <div class="form-div my-2 flex flex-col">
+                        <label class="my-2 font-semibold">School ID</label>
+                        <input class="px-1 py-2 rounded-lg" type="text" id="school-id" name="school-id" minlength="4" maxlength="10" required>
                     </div>
+
+                    <div class="form-div my-2 flex flex-col">
+                        <label class="my-2 font-semibold">Message</label>
+                        <textarea class="px-1 py-2 rounded-lg " type="text" id="message" name="Your Message" minlength="50" maxlength="200" cols="30" rows="6" required></textarea>
+                    </div>
+
                     <div>
-                        <input class="btn-submit" type="submit" onclick="submitData()" id="submit" value="Send Message">
+                        <input class="btn-submit bg-blue-400 p-4 rounded-xl md:mt-8 mt-4 cursor-pointer hover:bg-blue-500" type="submit" onclick="submitData()" id="submit" value="Send Message">
                     </div>
                 </form>
             </div>
 
-            <div class="col-sm-7 icons">
-                <div class="row section">
-                    <div class="section-items" id="phone">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <p>Our 24/7 Toll Free Number</p>
-                        <p>0101010101010</p>
+            <div class="col-sm-7 icons ">
+                <div class="row section flex justify-between  md:my-12 my-6 md:space-x-16 space-x-8">
+                    <div class="section-items md:px-4 md:py-8 px-2 py-4 bg-gray-200 rounded-2xl shadow-lg hover:shadow-xl font-semibold" id="phone">
+                        <div class="flex justify-between text-xl">
+                            <i class="fa fa-phone m-2 text-2xl" aria-hidden="true"></i>
+                            <p class="m-2 text-gray-800">0101010101010</p>
+                        </div>
+                        <p class="text-gray-800 text-right">Our 24/7 Toll Free Number</p>
                     </div>
-                    <div class="section-items" id="email">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <p>General Enquiries</p>
-                        <p>projo@gmail.com</p>
+
+                    <div class="section-items md:px-4 md:py-8 px-2 py-4 bg-gray-200 rounded-2xl shadow-lg hover:shadow-xl font-semibold" id="phone">
+                        <div class="flex justify-between text-xl">
+                            <i class="fa fa-envelope m-2 text-2xl" aria-hidden="true"></i>
+                            <p class="m-2 text-gray-800">General Enquiries</p>
+                        </div>
+                        <p class="text-gray-800 text-right">projo@gmail.com</p>
                     </div>
                 </div>
 
-                <div class="row section">
+                <div class="row section flex justify-between md:my-12 my-6 md:space-x-16 space-x-8">
+                    <div class="section-items md:px-4 md:py-8 px-2 py-4 bg-gray-200 rounded-2xl shadow-lg hover:shadow-xl font-semibold" id="phone">
+                        <div class="flex justify-between text-xl">
+                            <i class="fa fa-location-arrow text-2xl" aria-hidden="true"></i>
+                            <p class="m-2 text-gray-800">Location</p>
+                        </div>
+                        <p class="text-gray-800 text-right">UoN Plaza, Nairobi</p>
+                    </div>
+
+                    <div class="section-items md:px-4 md:py-8 px-2 py-4 bg-gray-200 rounded-2xl shadow-lg hover:shadow-xl font-semibold" id="phone">
+                        <div class="flex justify-between text-xl" id="support-email">
+                            <i class="fa fa-envelope m-2 text-2xl" aria-hidden="true"></i>
+                            <p class="m-2 text-gray-800">Support Email</p>
+                        </div>
+                        <p class="text-gray-800 text-right">support@projo.com</p>
+                    </div>
+                </div>
+
+                <!-- <div class="row section flex justify-around">
                     <div class="section-items" id="location">
                         <i class="fa fa-location-arrow" aria-hidden="true"></i>
                         <p>Location</p>
@@ -159,54 +178,59 @@
                         <p>Technical Enquiries</p>
                         <p>support@projo.com</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
- <!--footer-->
- <footer class="">
-    <div class="footer flex justify-around md:py-8 py-4">
-        <div class="manage"> 
-           <h3>PROJECT MANAGER</h3>
-           <p>You can trust us with all your projects.Visit now and sign up.</p>
+ 
+    <!--footer-->
+    <footer class="">
+        <div class="footer flex justify-around md:px-0 px-4 md:py-8 py-4">
+            <div class="manage"> 
+               <h3 class="md:text-3xl text-2xl font-semibold">PROJECT MANAGER</h3>
+               <p class="md:text-xl text-md mt-2">You can trust us with all your projects. Visit now and sign up. Visit now and sign up.</p>
 
-       </div> 
-        <!-- site links -->
-        <div class="link">
-            <ul>
-                <a href=""><li>LINKS</li></a>
-                <a href=""><li>Home</li></a>
-                <a href=""><li>Students</li></a>
-                <a href=""><li>Lecturers</li></a>
-                <a href=""><li>Contact</li></a>
-            </ul>
-        </div> 
-          
-        <div class="support">
-            <ul>
-                <a href=""><li>SUPPORT</li></a>
-                <a href=""><li>FAQ's</li></a>
-                <a href=""><li>About</li></a>
-                <a href=""><li>Help Center</li></a> 
-            </ul>
+           </div> 
+
+            <!-- site links -->
+            <div class="link">
+                <ul>
+                    <a href=""><li>LINKS</li></a>
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>Students</li></a>
+                    <a href=""><li>Lecturers</li></a>
+                    <a href=""><li>Contact</li></a>
+                </ul>
+            </div> 
+              
+            <div class="support">
+                <ul>
+                    <a href=""><li>SUPPORT</li></a>
+                    <a href=""><li>FAQ's</li></a>
+                    <a href=""><li>About</li></a>
+                    <a href=""><li>Help Center</li></a> 
+                </ul>
+            </div>
+
+            <div class="contact">
+                <ul>
+                    <a href=""><li>CONTACT</li></a>
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>Home</li></a> 
+                </ul>
+            </div>
+            <!-- </div> -->
         </div>
 
-        <div class="contact">
-            <ul>
-                <a href=""><li>CONTACT</li></a>
-                <a href=""><li>Home</li></a>
-                <a href=""><li>Home</li></a>
-                <a href=""><li>Home</li></a> 
-            </ul>
+          <!--copyright-->
+        <div class="copyright py-4">
+            <h3 class="text-gray-700 font-semibold">COPYRIGHT &copy; 2022 | PROJECT MANAGER</h3>
         </div>
-        <!-- </div> -->
-    </div>
+    </footer>
 
-      <!--copyright-->
-    <div class="copyright py-4">
-        <h3 class="text-gray-700">COPYRIGHT &copy; 2022 | PROJECT MANAGER</h3>
-    </div>
-</footer>
+
+
     <script>
         function submitData() {
             document.getElementById("user-data").submit();
