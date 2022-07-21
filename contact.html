@@ -13,6 +13,28 @@
 </head>
 
 <body>
+    <div class="nav">
+        <div class="navbar">
+            <h2>PROJECT MANAGER</h2>
+            <ul>
+                <li><a href="HOME">HOME</a></li>
+                <li><a href="STUDENTS">STUDENTS</a></li>
+                <li><a href="LECTURERS">LECTURERS</a></li>
+                <li><a href="CONTACT">CONTACT</a></li>
+
+            </ul>
+
+            <div class="btn">
+                <button id="log"><a href="#"></a>LOG IN</button>
+            </div>
+
+            <div class="btn2">
+                <button id="sign"><a href="#"></a>SIGN UP</button>
+            </div>
+
+        </div>
+    </div>
+<!-- Start of contact page -->
     <div class="container">
         <div class="row">
             <div class="col-sm-5">
@@ -33,7 +55,8 @@
                         <p>School ID</p>
                         <input type="text" id="school-id" name="School ID" minlength="4" maxlength="10" required>
                         <p>Message</p>
-                        <textarea type="text" id="message" name="Your Message" minlength="50" maxlength="200" required></textarea>
+                        <textarea type="text" id="message" name="Your Message" minlength="50" maxlength="200"
+                            required></textarea>
                     </div>
                     <div>
                         <input class="btn-submit" type="submit" onclick="submitData()" id="submit" value="Send Message">
@@ -70,8 +93,42 @@
             </div>
         </div>
     </div>
+    <div class="footer">
+        <div class="manage"> 
+           <h3>PROJECT MANAGER</h3>
+           <p>You can trust us with all your projects.Visit now and sign up.</p>
+
+       </div> 
+          <div class="link">
+            <ul>
+            <p>LINKS</p>
+            <P>Home</P>
+            <p>About</p>
+            <p>Projects</p>
+            <p>Contact</p>
+           </ul>
+          </div> 
+          
+          <div class="support">
+              <ul>
+                  <p>SUPPORT</p>
+                  <P>FAQ's</P>
+                  <p>About</p>
+                  <p>Help Center</p>
+              </ul>
+          </div>
+
+          <div class="contact">
+              <ul>
+                  <p>CONTACT</p>
+                  <P>Home</P>
+                  <p>Home</p>
+                  <p>Home</p>
+              </ul>
+          </div>
+      </div>
     <script>
-        function submitData(){
+        function submitData() {
             document.getElementById("user-data").submit();
         }
     </script>
