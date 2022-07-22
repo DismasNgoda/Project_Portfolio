@@ -14,41 +14,8 @@ body {
 }
 
 /* navbar */
-.nav{
+.nav {
     background-color: #00BFFF;
-}
-.navbar{
-    display: flex;
-    width:80%;
-    padding: 10px 10px;
-    justify-content: center;
-    align-items: center;
-}
-.navbar h2{
-    flex: 1;
-    color: black;
-    font-family: 'Inter', sans-serif;
-
-}
-.navbar ul{
-    flex: 2;
-    display: flex;
-    align-items:center ;
-    justify-content: space-between;
-    padding: 0px 5px;
-    margin: 20px;
-}
-.navbar ul li {
- list-style: none;
- padding: 8px 10px;
-
-}
-.navbar ul li a{
-    font-size: 20px;
-    padding: 10px 15px;
-   /* display: inline; */
-   color: #fafafa;
-    
 }
 
 
@@ -74,50 +41,19 @@ body {
     border: none;
 }
 
-.option{
-    /* margin-top: 70px;
-    text-align: center; */
-    /* background-image: url("../images/jason-goodman-Oalh2MojUuk-unsplash.jpg");
-    background-size: cover; */
-    /* margin-top: 0;
-    height: 500px;
-    background-position: 100%;
-    width: 100%; */
-    
-  }
-
-/* .title h1{
-  padding-top: 100px;
-  padding-left: 80px;
-} */
 
 img{
     height: 200px;
   
 }
 
-#get{
-    /* margin-top: 100px; */
+#get {
     background-color: #00BFFF;
     color: #fafafa;
 }
 
 
-
-/* #get:hover{
-    transform: scale(1.05);
-    color: purple;
-}  */
-
-/* .clients{
-    margin-left: 200px;
-    margin-top: 20px;
-} */
-
-.has{
-    /* display: flex;
-    justify-content: space-between;
-     */
+.has {
     background-color: #00BFFF;
     color: #fafafa;
     
@@ -127,113 +63,40 @@ img{
     font-weight: bold;
 }
 
-/* .service{
-   
-    display: flex;
-    justify-content:space-between;
-    padding-left: 100px;
-   
-} */
-
-
-/* .service .content{
-    flex: 1;
-    display: grid;
-    align-content: center;
-    max-width: 50%;
-    margin: 20px;
-    padding: 10px;
-    
-} */
-
-/* .service .content p{
-    margin-left: 0;
-} */
-
-/* .read{
-    margin-left: 500px;
-    margin-top: -20px;
-  
-} */
-
 
 .read {
     color: #fafafa;
     background-color: #00BFFF;
     border: none;
-    /* padding: 10px;
-    font-weight: 600;
-    margin-top: -20px; */
 }
 
-/*
-.read button:hover{
-    transform: scale(1.05);
-    color: purple;
-} */
 
-/* .activity{
-    display: flex;
-    max-width: 50%;
-    margin: 20px;
-    padding-left: 100px;
-} */
 
-.feedback{
+.feedback {
  padding-left: 20px;
     
   
 }
-.feedback p{
+.feedback p {
     margin-top: 10px;
     font-weight: 550;
     margin-bottom: 20px;
   
 }
 
-#senior{
+#senior {
     color: #00BFFF;
-    /* background-color: red; */
 }
 #words{
      color: black;
-    /* background-color: yellow; */
 }
-
-
-/* testimonials */
-/* .message{
-    gap: 2rem   ;
-    margin: 2% 8%;
-    display: flex;
-    justify-content: space-between;
-    /* width: 90%; *
-} */
 
 .message p{
     font-weight: 600;
   }
 
-  /* .jd {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center          ;
-    padding: 3%;
-    border: none;
-    border-radius: 12px;
-    /* background-color: gray; *
-  } */
-
-  /* .jd img {
-    border-radius: 100px;
-  } */
-
   .icons {  
-    /* display: flex; */
-    /* justify-content: space-around; */
     color: #00BFFF;
-    /* color: #fafafa; */
 }
 
 .icons i {
@@ -245,7 +108,6 @@ img{
 .benefits{
     margin-top: 30px;
     text-align: center;
-    /* background-color: red; */
  
 }
 
@@ -260,44 +122,18 @@ img{
     
 }
 
-/* .ask{
-    padding-left: 400px;
-} */
-
-/* .reach{
-    padding-left: 300px;
-} */
-
 .reach {
     background-color: #00BFFF;
-    /* border: none;
-    padding: 30px 20px 30px 20px; */
     color: #fafafa;
 }
 
-/* .reach button:hover{
-    transform: scale(1.05);
-    color: purple;
-   
-} */
-
 footer{
     background-color: #D9D9D9;
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* height: 200px; */
   
   }
 
 
-/* .manage{
-    margin-right: 100px;
-    width: 20%;
-    margin-top: 30px;
-    padding-left: 10px;
-} */
-
-.link{
+/* .link{
     margin-right: 30px;
     margin-top: 30px;
     font-weight: 550;
@@ -342,7 +178,4 @@ footer{
 .copyright{
     color: #00BFFF;
     text-align: center;
-    /* background-color: #D9D9D9; */
-    /* margin-top: -10px;
-    margin-bottom: 10px; */
-}
+} */

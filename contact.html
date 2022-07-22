@@ -16,36 +16,36 @@
 </head>
 
 <body>
-     <!-- navbar -->
-     <nav class="nav">
+    <!-- navbar -->
+    <nav class="nav">
         <div class=" flex justify-between flex-wrap md:px-6 px-4 py-4 ">
             <div class="flex items-center justify-between">
                 <div class="flex-shrink-0">
-                    <a href="#" class="flex items-center px-2 md:text-2xl text-lg font-semibold text-gray-800">
+                    <a href="#" class="flex items-center px-2 md:text-2xl text-xl font-semibold text-gray-800">
                         PROJECT MANAGER
                     </a>
                 </div>
         
                 <!--main-menu-->
                 <div class="hidden text-md w-full md:flex md:flex-grow lg:flex lg:items-center lg:w-auto">
-                    <ul class="md:flex ">
+                    <ul class="md:flex justify-between font-semibold">
                         <li>
-                            <a href="#" class="block py-2 px-4 lg:inline-block text-white font-medium">
+                            <a href="index.html" class="block py-2 px-3 md:mx-6 mx-0 lg:inline-block text-white hover:bg-gray-700 bg-gray-800 my-4 rounded-md duration-300">
                                 HOME
                             </a>
                         </li>
                         <li>
-                            <a href="login.html" class="block py-2 px-4 lg:inline-block text-white font-medium">
+                            <a href="./students/login.html" class="block py-2 px-3 md:mx-6 mx-0 lg:inline-block text-white hover:text-gray-800 hover:bg-white my-4 rounded-md duration-300">
                                 STUDENTS
                             </a>
                         </li>
                         <li>
-                            <a href="login.html" class="block py-2 px-4 lg:inline-block text-white font-medium">
+                            <a href="./lectures/login.html" class="block py-2 px-3 md:mx-6 mx-0 lg:inline-block text-white hover:text-gray-800 hover:bg-white my-4 rounded-md duration-300">
                                 LECTURERS
                             </a>
                         </li>
                         <li>
-                            <a href="contact.html" class="block py-2 px-4 lg:inline-block text-white font-medium">
+                            <a href="contact.html" class="block py-2 px-3 md:mx-6 mx-0 lg:inline-block text-white hover:text-gray-800 hover:bg-white my-4 rounded-md duration-300">
                                 CONTACT
                             </a>
                         </li>
@@ -65,39 +65,31 @@
                    
         </div>
 
-
         <!--mobile-menu-->
-        <div class="w-full flex flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="w-full flex flex-grow lg:flex lg:items-center lg:w-auto pb-4">
             <div class="menu md:hidden text-sm lg:flex-grow md:flex md:text-xl text-left font-bold text-white px-6">
-                <a href="#!" class="block py-2 lg:inline-block">
+                <a href="index.html" class="block py-2 px-3 lg:inline-block text-white hover:bg-gray-700 bg-gray-800 my-4 rounded-md duration-300">
                     HOME
                 </a>
-                <a href="#!" class="block py-2 lg:inline-block">
-                    ABOUT
+                <a href="./students/login.html" class="block py-2 px-3 lg:inline-block text-white hover:text-gray-800 hover:bg-white my-4 rounded-md duration-300">
+                    STUDENTS
                 </a>
-                <a href="#!" class="block py-2 lg:inline-block">
-                    PROJECTS
+                <a href="./lectures/login.html" class="block py-2 px-3 lg:inline-block text-white hover:text-gray-800 hover:bg-white my-4 rounded-md duration-300">
+                    LECTURERS
                 </a>
-                <a href="#!" class="block py-2 lg:inline-block">
+                <a href="contact.html" class="block py-2 px-3 lg:inline-block text-white hover:text-gray-800 hover:bg-white my-4 rounded-md duration-300">
                     CONTACT
-                </a>
-                <a href="#!" class="block py-2 px-3 lg:inline-block text-gray-800 bg-white my-4 rounded-md">
-                    LOGIN
-                </a>
-                <a href="#!" class="block py-2 px-3 lg:inline-block text-white hover:bg-gray-700 bg-gray-800 my-4 rounded-md duration-300">
-                    SIGNUP
                 </a>
             </div>
             
         </div>
-
 
     </nav>
 
 
     <!-- contact section -->
     <div class="container lg:my-44 md:my-24 my-16  md:px-16 px-8">
-        <div class="row md:flex flex-shrink justify-between">
+        <div class="row lg:flex flex-shrink justify-between">
             <div class="col-sm-5">
 
                 <form id="user-data" action="#">
@@ -106,17 +98,17 @@
                     <div class="form-div md:flex justify-between">
                         <div class="my-2 flex flex-col">
                             <label class="my-2 font-semibold">First Name</label>
-                            <input class="px-1 py-2 rounded-lg" type="text" id="fname" name="First Name" minlength="2" maxlength="25" required>
+                            <input class="lg:w-full md:w-2/3 px-1 py-2 rounded-lg" type="text" id="fname" name="First Name" minlength="2" maxlength="25" required>
                         </div>
                         <div class="my-2 flex flex-col md:ml-8 md:ml-4">
                             <label class="my-2 font-semibold">Last Name</label>
-                            <input  class="px-1 py-2 rounded-lg"type="text" id="lname" name="Last Name" minlength="2" maxlength="25" required>
+                            <input class="lg:w-full md:w-2/3 px-1 py-2 rounded-lg"type="text" id="lname" name="Last Name" minlength="2" maxlength="25" required>
                         </div>
                     </div>
 
                     <div class="form-div my-2 flex flex-col">
                         <label class="my-2 font-semibold">School ID</label>
-                        <input class="px-1 py-2 rounded-lg" type="text" id="school-id" name="school-id" minlength="4" maxlength="10" required>
+                        <input class="lg:w-full md:w-2/3 px-1 py-2 rounded-lg" type="text" id="school-id" name="school-id" minlength="4" maxlength="10" required>
                     </div>
 
                     <div class="form-div my-2 flex flex-col">
@@ -125,7 +117,7 @@
                     </div>
 
                     <div>
-                        <input class="btn-submit bg-blue-400 p-4 rounded-xl md:mt-8 mt-4 cursor-pointer hover:bg-blue-500" type="submit" onclick="submitData()" id="submit" value="Send Message">
+                        <input class="lg:w-full md:w-2/3 btn-submit bg-blue-400 p-4 rounded-xl md:mt-8 mt-4 cursor-pointer hover:bg-blue-500" type="submit" onclick="submitData()" id="submit" value="Send Message">
                     </div>
                 </form>
             </div>
@@ -133,9 +125,9 @@
             <div class="col-sm-7 icons ">
                 <div class="row section lg:flex justify-around md:my-12 my-6 md:space-y-0 space-y-8 lg:space-x-16 space-x-0">
                     
-                    <div class="flex justify-center font-semibold">
+                    <div class="flex justify-center font-semibold md:my-8 my-4">
                         <div class="flex flex-col justify-between md:max-w-xl rounded-lg bg-white shadow-lg p-4 bg-gray-200">
-                          <div class="p-6 flex flex-row justify-around">
+                          <div class="p-6 flex flex-row justify-between items-center">
                             <i class="fa fa-phone m-2 text-2xl" aria-hidden="true"></i>
                             <p class="m-2 text-gray-800">0101010101</p>
                           </div>
@@ -143,34 +135,34 @@
                         </div>
                     </div>
                     
-                    <div class="flex justify-center font-semibold">
+                    <div class="flex justify-center font-semibold md:my-8 my-4">
                         <div class="flex flex-col justify-between md:max-w-xl rounded-lg bg-white shadow-lg p-4 bg-gray-200">
-                          <div class="p-6 flex flex-row justify-around">
+                          <div class="p-6 flex flex-row justify-between items-center">
                             <i class="fa fa-envelope m-2 text-2xl" aria-hidden="true"></i>
-                            <p class="m-2 text-gray-800">Support Email</p>
+                            <p class="m-2 text-gray-800">Faculties</p>
                           </div>
-                          <p class="text-gray-800 text-right">support@projo.com</p>
+                          <p class="text-gray-800 text-right">projo.faculties@uon.com</p>
                         </div>
                     </div>
 
                 </div>
 
                 <div class="row section lg:flex justify-around md:my-12 my-6 md:space-y-0 space-y-8 lg:space-x-16 space-x-0">
-                    <div class="flex justify-center font-semibold">
+                    <div class="flex justify-center font-semibold md:my-8 my-4">
                         <div class="flex flex-col justify-between md:max-w-xl rounded-lg bg-white shadow-lg p-4 bg-gray-200">
-                          <div class="p-6 flex flex-row justify-around">
-                            <i class="fa fa-location m-2 text-2xl" aria-hidden="true"></i>
+                          <div class="p-6 flex flex-row justify-between items-center">
+                            <i class="fa fa-map-marker m-2 text-2xl" aria-hidden="true"></i>
                             <p class="m-2 text-gray-800">Location</p>
                           </div>
                           <p class="text-gray-800 text-right">UoN Plaza, Nairobi</p>
                         </div>
                     </div>
 
-                    <div class="flex justify-center font-semibold">
+                    <div class="flex justify-center font-semibold md:my-8 my-4">
                         <div class="flex flex-col justify-between md:max-w-xl rounded-lg bg-white shadow-lg p-4 bg-gray-200">
-                          <div class="p-6 flex flex-row justify-around">
+                          <div class="p-6 flex flex-row justify-between items-center">
                             <i class="fa fa-envelope m-2 text-2xl" aria-hidden="true"></i>
-                            <p class="m-2 text-gray-800">Support Email</p>
+                            <p class="m-2 text-gray-800">Support</p>
                           </div>
                           <p class="text-gray-800 text-right">support@projo.com</p>
                         </div>
@@ -187,10 +179,9 @@
     <!--footer-->
     <footer class="md:px-8 px-4">
         <div class="footer md:grid md:grid-cols-4 justify-between md:px-0 px-4 md:py-8 py-4">
-            <div class="manage"> 
-               <h3 class="md:text-3xl text-2xl font-semibold">PROJECT MANAGER</h3>
-               <p class="md:text-lg text-md mt-2">You can trust us with all your projects. Visit now and sign up. Visit now and sign up.</p>
-
+            <div class="manage md:mb-0 mb-8"> 
+               <h3 class="md:text-xl text-2xl font-semibold">PROJECT MANAGER</h3>
+               <p class=" mt-2">You can trust us with all your projects. Visit now and sign up. Visit now and sign up.</p>
            </div> 
 
             <!-- site links -->
@@ -248,9 +239,11 @@
 
 
     <script>
+
         function submitData() {
             document.getElementById("user-data").submit();
         }
+
     </script>
 
 </body>
